@@ -1,0 +1,42 @@
+.main__cont{
+    display: flex;
+    margin-bottom: 81px;
+    align-items: center;
+}
+.main__pic{
+    position: relative;
+    margin-left: 52px;
+}
+.pic__drops{
+    position: absolute;
+    top: 16%;
+    left: -8%;
+    transform: translate(-50% -50%);
+}
+.main__text{
+    padding-left: 12px;
+    padding-top: 60px;
+    color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.title  {
+    display: inline-block;
+    font-family: 'gagalin';
+    font-size: 70px;
+    letter-spacing: 0.02em;
+    &__yellow{
+        color: $yellow;
+        font-size: 75px;
+    }
+}
+.text__regular{
+    display: inline-block;
+    font-family: 'lifehack';
+    font-size: 65px;
+    letter-spacing: -0.1rem;
+    line-height: 1.01em;
+    margin: 0px;
+}

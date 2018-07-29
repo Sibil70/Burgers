@@ -1,0 +1,45 @@
+.menu__points{
+    position: fixed;
+    right: 50px;
+    top: 90px;
+}
+.points__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.points__item {
+        display: block;
+        width: 5px;
+        height: 5px;
+        background: #fff;
+        font-size: 0;
+        border-radius: 50%;
+        margin: 8px;
+        position: relative;
+        cursor: pointer;
+}
+.points__item-active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -95%;
+    left: -95%;
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.points__item:hover::before {
+content: "";
+display: block;
+position: absolute;
+top: -95%;
+left: -95%;
+width: 15px;
+height: 15px;
+border: 1px solid white;
+border-radius: 50%;
+}

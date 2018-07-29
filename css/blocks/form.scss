@@ -1,0 +1,24 @@
+.form{
+    background: url(../img/form/bg-texture.jpg) center center /cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+}
+.form__row{
+    color: #fff;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+.form__block {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.form__input{
+    border: initial;
+    padding: 12px 9px;
+    width: 100%;
+    border-radius: 5px;
+
+}

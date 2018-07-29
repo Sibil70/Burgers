@@ -1,7 +1,365 @@
-@import url(./normalize.css);
-@import url(./first-screen.css);
-@import url(./fonts.css);
-@import url(./layout.css);
-@import url(./we.css);
-@import url(./feedback.css);
-@import url(./main111.css);
+@import url(./layout/normalize.css);
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-family: 'ubuntu', helvetica, serif;
+  font-size: 16px;
+  line-height: 1,42;
+  position: relative;
+  color: #2f3234; }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 960px;
+  min-height: 100%;
+  overflow: hidden; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  list-style-type: none; }
+
+.section {
+  width: 100%;
+  min-width: 1100px;
+  height: 100vh;
+  min-height: 650px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  height: 100vh; }
+
+@font-face {
+  font-family: 'gagalin';
+  src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'lifehack';
+  src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-b-webfont.woff2") format("woff2"), url("../fonts/ubuntu-b-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-light-webfont.woff2") format("woff2"), url("../fonts/ubuntu-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-medium-webfont.woff2") format("woff2"), url("../fonts/ubuntu-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-regular-webfont.woff2") format("woff2"), url("../fonts/ubuntu-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+.first__screen {
+  background: url(../img/first_screen/texture.jpg) center center/cover no-repeat; }
+
+.main__cont {
+  display: flex;
+  margin-bottom: 81px;
+  align-items: center; }
+
+.main__pic {
+  position: relative;
+  margin-left: 52px; }
+
+.pic__drops {
+  position: absolute;
+  top: 16%;
+  left: -8%;
+  transform: translate(-50% -50%); }
+
+.main__text {
+  padding-left: 12px;
+  padding-top: 60px;
+  color: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.title {
+  display: inline-block;
+  font-family: 'gagalin';
+  font-size: 70px;
+  letter-spacing: 0.02em; }
+  .title__yellow {
+    color: #f9b43b;
+    font-size: 75px; }
+
+.text__regular {
+  display: inline-block;
+  font-family: 'lifehack';
+  font-size: 65px;
+  letter-spacing: -0.1rem;
+  line-height: 1.01em;
+  margin: 0px; }
+
+.arrow {
+  display: flex;
+  justify-content: center; }
+  .arrow__btn {
+    text-decoration: none;
+    width: 30px;
+    height: 29px;
+    background: url(../img/first_screen/arrow-scroll.png) center center no-repeat; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 10px;
+  margin-bottom: -8px;
+  position: relative; }
+
+.menu__logo {
+  flex: 1 1 auto; }
+
+.menu__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.nav__list {
+  display: flex;
+  align-items: center; }
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  font-weight: 400;
+  text-align: center; }
+  .nav__item:before {
+    content: "";
+    display: block;
+    margin-right: 10px;
+    width: 4px;
+    height: 4px;
+    border: 4px solid #fff;
+    border-radius: 50%; }
+
+.nav__item:first-child:before {
+  display: none; }
+
+.item__link {
+  color: #efefef;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase; }
+
+.button {
+  cursor: pointer;
+  color: #fff;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 5px; }
+  .button__red {
+    background-color: #e45028; }
+    .button__red:hover {
+      background-color: #c1401e; }
+
+.we__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 50px; }
+
+.list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  margin-right: 10px; }
+
+.item__pic {
+  margin-bottom: 38px; }
+
+.item__title {
+  align-self: center;
+  font-family: 'lifehack';
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px; }
+
+.item__desc {
+  font-family: 'ubuntu';
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5em; }
+
+.form {
+  background: url(../img/form/bg-texture.jpg) center center/cover no-repeat;
+  display: flex;
+  flex-direction: column; }
+
+.form__row {
+  color: #fff;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start; }
+
+.form__block {
+  flex: 1;
+  margin-right: 15px; }
+
+.form__input {
+  border: initial;
+  padding: 12px 9px;
+  width: 100%;
+  border-radius: 5px; }
+
+.form {
+  background: url(../img/form/bg-texture.jpg) center center/cover no-repeat;
+  display: flex;
+  flex-direction: column; }
+
+.form__row {
+  color: #fff;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start; }
+
+.form__block {
+  flex: 1;
+  margin-right: 15px; }
+
+.form__input {
+  border: initial;
+  padding: 12px 9px;
+  width: 100%;
+  border-radius: 5px; }
+
+.we {
+  width: 100%;
+  background: url(../img/we/bg.jpg) center center/cover no-repeat; }
+
+.container__we {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.feedback__list {
+  background: #2f3234;
+  height: 650px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style-type: none;
+  color: #fff; }
+
+.feedback__pic {
+  width: 100%;
+  height: 100%; }
+
+.feedback__item {
+  width: 25%;
+  height: 50%;
+  position: relative; }
+  .feedback__item .feedback__content {
+    background-color: rgba(20, 20, 20, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 50px 30px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    height: 100%; }
+    .feedback__item .feedback__content .content__text {
+      overflow: hidden; }
+    .feedback__item .feedback__content:hover {
+      opacity: 1;
+      transition: 1.5s; }
+
+.content__user {
+  margin-bottom: 22px;
+  font-family: 'gagalin';
+  font-size: 14px; }
+
+.content__text {
+  font-family: 'ubuntu';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.70em;
+  margin: 0 0 25px 0; }
+
+.button__black {
+  background-color: #2f3234;
+  width: 110px;
+  height: 35px; }
+  .button__black:hover {
+    cursor: pointer;
+    background: #1f2122; }
+
+.menu__points {
+  position: fixed;
+  right: 50px;
+  top: 90px; }
+
+.points__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.points__item {
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  font-size: 0;
+  border-radius: 50%;
+  margin: 8px;
+  position: relative;
+  cursor: pointer; }
+
+.points__item-active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -95%;
+  left: -95%;
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  border-radius: 50%; }
+
+.points__item:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -95%;
+  left: -95%;
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  border-radius: 50%; }
+
+/*# sourceMappingURL=main.css.map */
