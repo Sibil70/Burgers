@@ -1,3 +1,9 @@
 .first__screen{
     background: url(../img/first_screen/texture.jpg) center center / cover  no-repeat;
 }
+.first__screen__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

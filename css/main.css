@@ -78,10 +78,17 @@ h1, h2, h3, h4, h5, h6 {
 .first__screen {
   background: url(../img/first_screen/texture.jpg) center center/cover no-repeat; }
 
+.first__screen__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
 .main__cont {
   display: flex;
   margin-bottom: 81px;
-  align-items: center; }
+  align-items: center;
+  flex: 1; }
 
 .main__pic {
   position: relative;
