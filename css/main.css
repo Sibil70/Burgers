@@ -237,27 +237,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   border-radius: 5px; }
 
-.form {
-  background: url(../img/form/bg-texture.jpg) center center/cover no-repeat;
-  display: flex;
-  flex-direction: column; }
-
-.form__row {
-  color: #fff;
-  margin-bottom: 15px;
-  display: flex;
-  align-items: flex-start; }
-
-.form__block {
-  flex: 1;
-  margin-right: 15px; }
-
-.form__input {
-  border: initial;
-  padding: 12px 9px;
-  width: 100%;
-  border-radius: 5px; }
-
 .we {
   width: 100%;
   background: url(../img/we/bg.jpg) center center/cover no-repeat; }
@@ -368,5 +347,79 @@ h1, h2, h3, h4, h5, h6 {
   height: 15px;
   border: 1px solid white;
   border-radius: 50%; }
+
+.team {
+  background: url(../img/team/bg_team.jpg) center center/cover no-repeat;
+  position: relative; }
+
+.team-accordeon {
+  position: absolute;
+  top: 0px;
+  left: 49.5%;
+  width: 50.5%;
+  height: 100%;
+  background: rgba(62, 64, 66, 0.93);
+  padding-top: 105px;
+  padding-left: 100px; }
+
+.title__yellow {
+  margin-bottom: 55px; }
+
+.team-accordeon__list {
+  display: flex;
+  flex-direction: column; }
+
+.team-accordeon__trigger {
+  font-family: 'gagalin', Helvetica, sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 15px; }
+  .team-accordeon__trigger::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 6px;
+    margin-right: 10px;
+    background: url(../img/team/btn_up.png) center center no-repeat; }
+
+.team-accordeon__trigger--active {
+  font-family: 'gagalin', Helvetica, sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #f9b43b; }
+  .team-accordeon__trigger--active::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 6px;
+    margin-right: 10px;
+    background: url(../img/team/btn_down.png) center center no-repeat; }
+
+.team-accordeon__content {
+  display: flex;
+  color: #fff;
+  width: 350px;
+  height: 0;
+  overflow: hidden;
+  line-height: 1.42; }
+
+.team-accordeon__trigger--active + .team-accordeon__content {
+  height: 100%;
+  margin-bottom: 30px; }
+
+.team-accordeon__content-photo {
+  margin-left: 25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-right: 20px; }
+
+.team-accordeon__occupation {
+  font-weight: 700;
+  margin-bottom: 10px; }
 
 /*# sourceMappingURL=main.css.map */
