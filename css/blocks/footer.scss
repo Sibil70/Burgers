@@ -1,0 +1,17 @@
+.footer {
+    background: url(../img/footer/footer-bg.jpg) center center /cover    no-repeat;
+    position: absolute;
+    width: 100%;
+    min-width: 960px;
+    height: 60px; 
+    color: #fff;
+    overflow: hidden;
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.col {
+    width: 50%;
+    padding-top: 15px
+}

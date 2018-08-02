@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$yellow".
-        on line 42 of D:\LOFT\sites\burger\css\blocks\team__acord.scss
+Error: Undefined variable: "$black".
+        on line 18 of D:\LOFT\sites\burger\css\layout\layout.scss
 
-37:     font-family: 'gagalin', Helvetica, sans-serif;
-38:     font-size: 14px;
-39:     display: flex;
-40:     align-items: center;
-41:     margin-bottom: 15px;
-42:     color: $yellow;
-43:     &::before{
-44:         content: "";
-45:         display: block;
-46:         width: 10px;
-47:         height: 6px;
+13: body{
+14:     font-family: 'ubuntu', helvetica, serif;
+15:     font-size: 16px;
+16:     line-height: 1,42;
+17:     position: relative;
+18:     color: $black;
+19: }
+20: .wrapper{
+21:     position: relative;
+22:     width: 100%;
+23:     min-width: 940px+20px;
 
 Backtrace:
-D:\LOFT\sites\burger\css\blocks\team__acord.scss:42
+D:\LOFT\sites\burger\css\layout\layout.scss:18
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 42 of D:\LOFT\sites\burger\css\blocks\team__acord.scss\A \A 37:     font-family: 'gagalin', Helvetica, sans-serif;\A 38:     font-size: 14px;\A 39:     display: flex;\A 40:     align-items: center;\A 41:     margin-bottom: 15px;\A 42:     color: $yellow;\A 43:     &::before{\A 44:         content: \"\";\A 45:         display: block;\A 46:         width: 10px;\A 47:         height: 6px;"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 18 of D:\LOFT\sites\burger\css\layout\layout.scss\A \A 13: body{\A 14:     font-family: 'ubuntu', helvetica, serif;\A 15:     font-size: 16px;\A 16:     line-height: 1,42;\A 17:     position: relative;\A 18:     color: $black;\A 19: }\A 20: .wrapper{\A 21:     position: relative;\A 22:     width: 100%;\A 23:     min-width: 940px+20px;"; }

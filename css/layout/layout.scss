@@ -23,6 +23,7 @@ body{
     min-width: 940px+20px;
     min-height: 100%;
     overflow: hidden;
+    margin-bottom: -60px;
 }
 ul{
     margin: 0;
@@ -44,4 +45,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 940px;
     margin: 0 auto;
     height: 100vh;
+}
+address {
+    text-decoration: none;
 }

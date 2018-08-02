@@ -22,7 +22,8 @@ body {
   width: 100%;
   min-width: 960px;
   min-height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: -60px; }
 
 ul {
   margin: 0;
@@ -44,6 +45,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 940px;
   margin: 0 auto;
   height: 100vh; }
+
+address {
+  text-decoration: none; }
 
 @font-face {
   font-family: 'gagalin';
@@ -421,5 +425,102 @@ h1, h2, h3, h4, h5, h6 {
 .team-accordeon__occupation {
   font-weight: 700;
   margin-bottom: 10px; }
+
+.menu {
+  background: url(../img/menu/bg_menu.jpg) center center/cover no-repeat;
+  position: relative; }
+
+.menu-accordeon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  display: flex;
+  justify-content: flex-end; }
+
+.menu-accordeon__list {
+  display: flex;
+  flex-wrap: wrap; }
+
+.menu-accordeon__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.menu__title-triger {
+  font-family: 'Gagalin', Helvetica, sans-serif;
+  font-size: 40px;
+  padding: 25px 0 25px 40px; }
+
+.map {
+  background: url(../img/map/map.jpg) center center/cover no-repeat; }
+
+.footer {
+  background: url(../img/footer/footer-bg.jpg) center center/cover no-repeat;
+  position: absolute;
+  width: 100%;
+  min-width: 960px;
+  height: 60px;
+  color: #fff;
+  overflow: hidden; }
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.col {
+  width: 50%;
+  padding-top: 15px; }
+
+.adress {
+  font-family: 'ubuntu', helvetica, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
+  .adress__street {
+    margin-bottom: 5px; }
+  .adress__tel {
+    text-decoration: none;
+    color: #e45028;
+    font-weight: 500;
+    display: flex;
+    align-items: center; }
+    .adress__tel::before {
+      content: "";
+      background: url(../img/footer/phone.png) center center no-repeat;
+      display: block;
+      margin-right: 5px;
+      width: 10px;
+      height: 10px; }
+
+.socials__list {
+  display: flex;
+  justify-content: flex-end; }
+
+.socials__item {
+  margin-right: 20px; }
+  .socials__item:last-child {
+    margin-right: 0; }
+
+.socials__item-link {
+  display: block;
+  width: 20px;
+  height: 20px; }
+
+.vk {
+  background: url(../img/footer/vk.png) center center no-repeat; }
+
+.fb {
+  background: url(../img/footer/fb_hover.png) center center no-repeat; }
+
+.inst {
+  background: url(../img/footer/inst.png) center center no-repeat; }
+
+.tw {
+  background: url(../img/footer/tw.png) center center no-repeat; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+.socials__list{
+    display: flex;
+    justify-content: flex-end; 
+}
+.socials__item {
+    margin-right: 20px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.socials__item-link{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.vk {
+    background: url(../img/footer/vk.png) center center no-repeat;
+}
+.fb {
+    background: url(../img/footer/fb_hover.png) center center no-repeat;
+}
+.inst {
+    background: url(../img/footer/inst.png) center center no-repeat;
+}
+.tw {
+    background: url(../img/footer/tw.png) center center no-repeat;
+}
