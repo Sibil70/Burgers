@@ -1,0 +1,45 @@
+.we__list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px; }
+
+.item__icon {
+  width: 97px;
+  height: 89px;
+  margin-bottom: 38px; }
+
+.item__title {
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-family: 'lifehack';
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px; }
+
+.item__desc {
+  font-family: 'ubuntu';
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5em; }
+
+/*# sourceMappingURL=we__list.css.map */

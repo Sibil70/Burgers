@@ -130,11 +130,10 @@ address {
 .arrow {
   display: flex;
   justify-content: center; }
-  .arrow__btn {
-    text-decoration: none;
-    width: 30px;
-    height: 29px;
-    background: url(../img/first_screen/arrow-scroll.png) center center no-repeat; }
+
+.arrow-scroll {
+  width: 29px;
+  height: 14px; }
 
 .header {
   display: flex;
@@ -145,6 +144,10 @@ address {
 
 .logo {
   flex: 1; }
+
+.logo-icon {
+  width: 90px;
+  height: 70px; }
 
 .nav {
   display: flex;
@@ -204,7 +207,9 @@ address {
   align-items: center;
   margin-right: 10px; }
 
-.item__pic {
+.item__icon {
+  width: 97px;
+  height: 89px;
   margin-bottom: 38px; }
 
 .item__title {

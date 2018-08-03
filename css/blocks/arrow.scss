@@ -1,10 +1,8 @@
 .arrow {
     display: flex;
     justify-content: center;
-    &__btn {
-        text-decoration: none;
-        width: 30px;
-        height: 29px;
-        background: url(../img/first_screen/arrow-scroll.png) center center no-repeat;
-    }
+}
+.arrow-scroll {
+    width: 29px;
+    height: 14px;
 }
