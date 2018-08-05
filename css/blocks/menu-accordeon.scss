@@ -3,21 +3,28 @@
     top: 0;
     bottom: 0;
     right: 0;
-    width: 70%;
-    display: flex;
-    justify-content: flex-end;
-}
-.menu-accordeon__list {
-    display: flex;
-    flex-wrap: wrap;
 }
 .menu-accordeon__item {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
 }
-.menu__title-triger{
-    font-family: 'Gagalin', Helvetica, sans-serif;
+.menu-accordeon__triger {
+    text-decoration: none;
     font-size: 40px;
-    padding: 25px 0 25px 40px;
+    color: #FFF;
+    font-family: 'gagalin', helvetica, sans-serif;
+    width: 80px;
+    white-space: nowrap;
+    height: 100%;
+
+}
+.menu-accordeon__triger-text{
+	font-size: 40px;
+    text-align: center;
+	white-space: nowrap;
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    left: 50%;
+    top: 100%;
+    margin-top: -20px;
 }

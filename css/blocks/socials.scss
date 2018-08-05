@@ -13,16 +13,12 @@
     width: 20px;
     height: 20px;
 }
-.vk {
-    background: url(../img/footer/vk.png) center center no-repeat;
+.item-icon {
+    width: 20px;
+    height: 20px;
     transition: 0.3s;
-}
-.fb {
-    background: url(../img/footer/fb_hover.png) center center no-repeat;
-}
-.inst {
-    background: url(../img/footer/inst.png) center center no-repeat;
-}
-.tw {
-    background: url(../img/footer/tw.png) center center no-repeat;
+    fill: #5b5b5b;
+    &:hover {
+        fill: #fff;
+    }
 }
