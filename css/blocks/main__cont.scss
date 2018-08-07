@@ -1,12 +1,17 @@
 .maincontent{
     display: flex;
-    margin-bottom: 81px;
+    margin-bottom: rem(81px);
     align-items: center;
     flex: 1;
+    justify-content: center;
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 .main__pic{
     position: relative;
-    margin-left: 52px;
+    margin-left: rem(52px);
 }
 .pic__drops{
     position: absolute;
@@ -15,29 +20,36 @@
     transform: translate(-50% -50%);
 }
 .main__text{
-    padding-left: 12px;
-    padding-top: 60px;
+    padding-left: rem(12px);
+    padding-top: rem(60px);
     color: #efefef;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    @include tablets {
+        padding-top: rem(10px);
+        text-align: center;
+    }
 }
 .title  {
     display: inline-block;
     font-family: 'gagalin';
-    font-size: 70px;
+    font-size: rem(70px);
     letter-spacing: 0.02em;
     &__yellow{
         color: $yellow;
-        font-size: 75px;
+        font-size: rem(75px);
     }
 }
 .text__regular{
     display: inline-block;
     font-family: 'lifehack';
-    font-size: 65px;
+    font-size: rem(65px);
     letter-spacing: -0.1rem;
     line-height: 1.01em;
-    margin: 0px;
+    margin: rem(0px);
+    @include tablets {
+        width: 99%;
+        text-align: center;
+    }
 }

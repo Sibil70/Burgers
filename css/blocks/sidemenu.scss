@@ -1,7 +1,7 @@
 .menu__points{
     position: fixed;
-    right: 50px;
-    top: 90px;
+    right: rem(50px);
+    top: rem(90px);
 }
 .points__list{
     display: flex;
@@ -12,12 +12,12 @@
 }
 .points__item {
         display: block;
-        width: 5px;
-        height: 5px;
+        width: rem(5px);
+        height: rem(5px);
         background: #fff;
         font-size: 0;
         border-radius: 50%;
-        margin: 8px;
+        margin: rem(8px);
         position: relative;
         cursor: pointer;
 }
@@ -27,9 +27,9 @@
     position: absolute;
     top: -95%;
     left: -95%;
-    width: 15px;
-    height: 15px;
-    border: 1px solid white;
+    width: rem(15px);
+    height: rem(15px);
+    border: rem(1px) solid white;
     border-radius: 50%;
 }
 .points__item:hover::before {
@@ -38,8 +38,8 @@ display: block;
 position: absolute;
 top: -95%;
 left: -95%;
-width: 15px;
-height: 15px;
-border: 1px solid white;
+width: rem(15px);
+height: rem(15px);
+border: rem(1px) solid white;
 border-radius: 50%;
 }

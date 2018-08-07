@@ -3,19 +3,19 @@
     justify-content: flex-end; 
 }
 .socials__item {
-    margin-right: 20px;
+    margin-right: rem(20px);
     &:last-child {
         margin-right: 0;
     }
 }
 .socials__item-link{
     display: block;
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
 }
 .item-icon {
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
     transition: 0.3s;
     fill: #5b5b5b;
     &:hover {

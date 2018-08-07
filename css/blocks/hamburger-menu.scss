@@ -1,0 +1,31 @@
+.hamburger-menu {
+    margin-left: rem(25px);
+    padding-top: rem(7px);
+    width: rem(25px);
+    height: rem(35px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    @include tablets {
+        display: initial;
+    }
+}
+.hamburger-menu__1 {
+    width: 100%;
+    border-radius: rem(1px);
+    border: rem(2px) solid #fff;
+    margin-bottom: rem(5px);
+}
+.hamburger-menu__2 {
+    width: 100%;
+    border-radius: rem(1px);
+    border: rem(2px) solid #fff;
+    margin-bottom: rem(5px);
+}
+.hamburger-menu__3 {
+    width: 100%;
+    border-radius: rem(1px);
+    border: rem(2px) solid #fff;
+    margin-bottom: rem(5px);
+}

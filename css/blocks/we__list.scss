@@ -8,23 +8,23 @@
     flex-direction: column;
     justify-content: baseline;
     align-items: center;
-    margin-right: 10px;
+    margin-right: rem(10px);
 }
 .item__icon {
-    width: 97px;
-    height: 89px;
-    margin-bottom: 38px;
+    width: rem(97px);
+    height: rem(89px);
+    margin-bottom: rem(38px);
 }
 .item__title{
     align-self: center;
     font-family: 'lifehack';
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: rem(24px);
+    margin-bottom: rem(20px);
 }
 .item__desc {
     font-family: 'ubuntu';
     text-align: center;
-    font-size: 14px;
+    font-size: rem(14px);
     line-height: 1.5em;
 }

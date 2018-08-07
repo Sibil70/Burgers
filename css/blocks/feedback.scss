@@ -7,55 +7,58 @@
     list-style-type: none;
     color: #fff;
 }
-.feedback__pic {
-    width: 100%;
-    height: 100%;
-}
 .feedback__item{
     width: 25%;
     height: 50%;
     position: relative;
+    background-position: center;
+    background-size: cover;
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
     .feedback__content{
         background-color: rgba(20,20,20,0.7);
         position: absolute;
         top: 0;
         left: 0;
-        padding: 50px 30px 15px 20px;
+        padding: rem(50px) rem(30px) rem(15px) rem(20px);
         display: flex;
         flex-direction: column;
         opacity: 0;
         height: 100%;
         width: 100%;
+        @include tablets {
+            align-items: center;
+        }
         .content__text{
             overflow: hidden;
         }
         &:hover {
             opacity: 1;
-            transition: 1.5s;
+            transition: 0.5s;
         }
     }
 }
 .content__user{
-    margin-bottom: 22px;
+    margin-bottom: rem(22px);
     font-family: 'gagalin';
-    font-size:   14px;
+    font-size:   rem(14px);
 }
 
 .content__text{
-  
         font-family: 'ubuntu';
-        font-size: 14px;
+        font-size: rem(14px);
         font-weight: 300;
         line-height: 1.70em;
-        margin: 0 0 25px 0;
- 
+        margin: 0 0 rem(25px) 0;
 }
 
 .button{
     &__black {
         background-color: $black;
-            width: 110px;
-            height: 35px;
+            width: rem(110px);
+            height: rem(35px);
         &:hover{
             cursor: pointer;
             background: #1f2122;
