@@ -34,11 +34,11 @@
 .team-accordeon__trigger {
     font-family: 'gagalin', Helvetica, sans-serif;
     text-transform: uppercase;
-    font-size: rem(14px);
+    font-size: rem(32px);
     display: flex;
     align-items: center;
     color: #fff;
-    margin-bottom: rem(15px);
+    margin-bottom: rem(25px);
     &::before{
         content: "";
         display: block;
@@ -49,21 +49,12 @@
     }
     @include tablets {
         margin-left: rem(90px);
+        text-align: center;
     }
 }
 .team-accordeon__trigger--active{
-    // font-family: 'gagalin', Helvetica, sans-serif;
-    // font-size: rem(14px);
-    // display: flex;
-    // align-items: center;
-    // margin-bottom: rem(15px);
     color: $yellow;
     &::before{
-        // content: "";
-        // display: block;
-        // width: rem(10px);
-        // height: rem(6px);
-        // margin-right: rem(10px);
         background: url(../img/team/btn_down.png) center center no-repeat;
     }
 }

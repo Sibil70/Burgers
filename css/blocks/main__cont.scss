@@ -12,12 +12,22 @@
 .main__pic{
     position: relative;
     margin-left: rem(52px);
+    @include phones {
+        width: 100%;
+        height: auto;
+    }
+}
+.pic__burger {
+    width: 100%;
+    height: auto;
 }
 .pic__drops{
     position: absolute;
     top: 16%;
-    left: -8%;
+    left: -3%;
     transform: translate(-50% -50%);
+    width: 100%;
+    height: auto;
 }
 .main__text{
     padding-left: rem(12px);

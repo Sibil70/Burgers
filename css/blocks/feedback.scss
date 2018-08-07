@@ -33,6 +33,9 @@
         }
         .content__text{
             overflow: hidden;
+            @include phones {
+                display: none;
+            }
         }
         &:hover {
             opacity: 1;
@@ -44,6 +47,10 @@
     margin-bottom: rem(22px);
     font-family: 'gagalin';
     font-size:   rem(14px);
+    @include phones {
+        font-size:   rem(24px);
+        text-align: center;
+    }
 }
 
 .content__text{

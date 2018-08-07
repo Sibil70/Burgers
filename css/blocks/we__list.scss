@@ -2,6 +2,9 @@
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
+    @include phones {
+        flex-direction: column;
+    }
 }
 .list__item {
     display: flex;
@@ -9,11 +12,17 @@
     justify-content: baseline;
     align-items: center;
     margin-right: rem(10px);
+    @include phones {
+        flex-direction: initial;
+    }
 }
 .item__icon {
     width: rem(97px);
     height: rem(89px);
     margin-bottom: rem(38px);
+    @include phones {
+        margin-right: rem(25px);
+    }
 }
 .item__title{
     align-self: center;
@@ -21,8 +30,11 @@
     text-align: center;
     font-size: rem(24px);
     margin-bottom: rem(20px);
+    @include phones {
+        text-align: initial;
+    }
 }
-.item__desc {
+.item__text {
     font-family: 'ubuntu';
     text-align: center;
     font-size: rem(14px);

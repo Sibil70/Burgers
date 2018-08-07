@@ -48,7 +48,8 @@ ul, li {
 
 .section {
   height: 100vh;
-  min-height: 40.625rem; }
+  min-height: 40.625rem;
+  overflow: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
@@ -125,13 +126,23 @@ address {
 .main__pic {
   position: relative;
   margin-left: 3.25rem; }
+  @media screen and (max-width: 480px) {
+    .main__pic {
+      width: 100%;
+      height: auto; } }
+
+.pic__burger {
+  width: 100%;
+  height: auto; }
 
 .pic__drops {
   position: absolute;
   top: 16%;
-  left: -8%;
+  left: -3%;
   -webkit-transform: translate(-50% -50%);
-          transform: translate(-50% -50%); }
+          transform: translate(-50% -50%);
+  width: 100%;
+  height: auto; }
 
 .main__text {
   padding-left: 0.75rem;
@@ -278,6 +289,12 @@ address {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
+  @media screen and (max-width: 480px) {
+    .we__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .list__item {
   display: -webkit-box;
@@ -294,11 +311,20 @@ address {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 0.625rem; }
+  @media screen and (max-width: 480px) {
+    .list__item {
+      -webkit-box-orient: initial;
+      -webkit-box-direction: initial;
+          -ms-flex-direction: initial;
+              flex-direction: initial; } }
 
 .item__icon {
   width: 6.0625rem;
   height: 5.5625rem;
   margin-bottom: 2.375rem; }
+  @media screen and (max-width: 480px) {
+    .item__icon {
+      margin-right: 1.5625rem; } }
 
 .item__title {
   -ms-flex-item-align: center;
@@ -307,8 +333,11 @@ address {
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 1.25rem; }
+  @media screen and (max-width: 480px) {
+    .item__title {
+      text-align: initial; } }
 
-.item__desc {
+.item__text {
   font-family: 'ubuntu';
   text-align: center;
   font-size: 0.875rem;
@@ -333,6 +362,11 @@ address {
       -ms-flex-align: center;
           align-items: center; }
 
+@media screen and (max-width: 768px) {
+  .order__title {
+    text-align: center;
+    margin-bottom: 2rem; } }
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,6 +383,24 @@ address {
 
 .form__column {
   width: 50%; }
+  @media screen and (max-width: 768px) {
+    .form__column {
+      width: 75%; } }
+  @media screen and (max-width: 480px) {
+    .form__column {
+      width: 98%; } }
+  @media screen and (max-width: 480px) {
+    .form__column--center {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .form__row {
   color: #fff;
@@ -359,12 +411,18 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media screen and (max-width: 480px) {
+    .form__row--margin {
+      margin-bottom: 2.5rem; } }
 
 .form__block {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-right: 0.9375rem; }
+  @media screen and (max-width: 480px) {
+    .form__block--invisible {
+      display: none; } }
 
 .form__text {
   margin-bottom: 0.625rem; }
@@ -388,6 +446,9 @@ address {
   .form__area:focus {
     outline: none;
     border: 0.1875rem solid #f9b43b; }
+  @media screen and (max-width: 480px) {
+    .form__area {
+      width: 30.9375rem; } }
 
 .payment {
   display: -webkit-box;
@@ -528,6 +589,9 @@ address {
                 align-items: center; } }
     .feedback__item .feedback__content .content__text {
       overflow: hidden; }
+      @media screen and (max-width: 480px) {
+        .feedback__item .feedback__content .content__text {
+          display: none; } }
     .feedback__item .feedback__content:hover {
       opacity: 1;
       -webkit-transition: 0.5s;
@@ -537,6 +601,10 @@ address {
   margin-bottom: 1.375rem;
   font-family: 'gagalin';
   font-size: 0.875rem; }
+  @media screen and (max-width: 480px) {
+    .content__user {
+      font-size: 1.5rem;
+      text-align: center; } }
 
 .content__text {
   font-family: 'ubuntu';
@@ -661,7 +729,7 @@ address {
 .team-accordeon__trigger {
   font-family: 'gagalin', Helvetica, sans-serif;
   text-transform: uppercase;
-  font-size: 0.875rem;
+  font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,7 +737,7 @@ address {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  margin-bottom: 0.9375rem; }
+  margin-bottom: 1.5625rem; }
   .team-accordeon__trigger::before {
     content: "";
     display: block;
@@ -679,7 +747,8 @@ address {
     background: url(../img/team/btn_up.png) center center no-repeat; }
   @media screen and (max-width: 768px) {
     .team-accordeon__trigger {
-      margin-left: 5.625rem; } }
+      margin-left: 5.625rem;
+      text-align: center; } }
 
 .team-accordeon__trigger--active {
   color: #f9b43b; }
@@ -777,6 +846,13 @@ address {
   height: 3.75rem;
   color: #fff;
   overflow: hidden; }
+  @media screen and (max-width: 480px) {
+    .footer {
+      height: 6.875rem;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .footer-wrapper {
   display: -webkit-box;
@@ -785,10 +861,32 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media screen and (max-width: 480px) {
+    .footer-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .col {
   width: 50%;
   padding-top: 0.9375rem; }
+  @media screen and (max-width: 480px) {
+    .col {
+      width: 98%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .adress {
   font-family: 'ubuntu', helvetica, sans-serif;
@@ -807,6 +905,14 @@ address {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start; }
+  @media screen and (max-width: 480px) {
+    .adress {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   .adress__street {
     margin-bottom: 0.3125rem; }
   .adress__tel {

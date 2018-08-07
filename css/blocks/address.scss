@@ -6,6 +6,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    @include phones {
+        align-items: center;
+        justify-content: center;
+    }
     &__street  {
         margin-bottom: rem(5px);
     }
