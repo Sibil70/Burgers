@@ -1,35 +1,28 @@
 /*
-Error: Undefined variable: "$yellow".
-        on line 36 of D:\LOFT\sites\burger\css\blocks\menu-accordeon.scss
+Error: Undefined mixin 'tablets'.
+        on line 10 of D:\LOFT\sites\burger\css\blocks\menu.scss, in `tablets'
+        from line 10 of D:\LOFT\sites\burger\css\blocks\menu.scss
 
-31:     left:50%;
-32:     transform: rotate(-90deg);
-33:     white-space: nowrap;
-34:     transform-origin: 0 50%;
-35:     &--active {
-36:         color: $yellow;
-37:     }
-38: }
-39: 
-40: .menu-accordeon__cont {
-41:     width: 0;
+5: .menu__title {
+6:     position: absolute;
+7:     top: rem(110px);
+8:     left: rem(75px);
+9:     color: white;
+10:     @include tablets {
+11:         overflow: hidden;
+12:     }
+13:     @include phones {
+14:         display: none;
+15:     }
 
 Backtrace:
-D:\LOFT\sites\burger\css\blocks\menu-accordeon.scss:36
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+D:\LOFT\sites\burger\css\blocks\menu.scss:10:in `tablets'
+D:\LOFT\sites\burger\css\blocks\menu.scss:10
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -73,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 36 of D:\LOFT\sites\burger\css\blocks\menu-accordeon.scss\A \A 31:     left:50%;\A 32:     transform: rotate(-90deg);\A 33:     white-space: nowrap;\A 34:     transform-origin: 0 50%;\A 35:     &--active {\A 36:         color: $yellow;\A 37:     }\A 38: }\A 39: \A 40: .menu-accordeon__cont {\A 41:     width: 0;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 10 of D:\LOFT\sites\burger\css\blocks\menu.scss, in `tablets'\A         from line 10 of D:\LOFT\sites\burger\css\blocks\menu.scss\A \A 5: .menu__title {\A 6:     position: absolute;\A 7:     top: rem(110px);\A 8:     left: rem(75px);\A 9:     color: white;\A 10:     @include tablets {\A 11:         overflow: hidden;\A 12:     }\A 13:     @include phones {\A 14:         display: none;\A 15:     }"; }

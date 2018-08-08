@@ -10,10 +10,10 @@ Error: Undefined mixin 'tablets'.
 11:     padding-left: rem(100px);
 12:     @include tablets {
 13:         left: 0;
-14:         text-align: center;
-15:         display: flex;
-16:         flex-direction: column;
-17:         justify-content: center;
+14:         display: flex;
+15:         flex-direction: column;
+16:         align-items: center;
+17:         padding-left: rem(0px);
 
 Backtrace:
 D:\LOFT\sites\burger\css\blocks\team__acord.scss:12:in `tablets'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 12 of D:\LOFT\sites\burger\css\blocks\team__acord.scss, in `tablets'\A         from line 12 of D:\LOFT\sites\burger\css\blocks\team__acord.scss\A \A 7:     left: 49.5%;\A 8:     height: 100%;\A 9:     background: rgba(62, 64, 66, 0.93);\A 10:     padding-top: rem(105px);\A 11:     padding-left: rem(100px);\A 12:     @include tablets {\A 13:         left: 0;\A 14:         text-align: center;\A 15:         display: flex;\A 16:         flex-direction: column;\A 17:         justify-content: center;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 12 of D:\LOFT\sites\burger\css\blocks\team__acord.scss, in `tablets'\A         from line 12 of D:\LOFT\sites\burger\css\blocks\team__acord.scss\A \A 7:     left: 49.5%;\A 8:     height: 100%;\A 9:     background: rgba(62, 64, 66, 0.93);\A 10:     padding-top: rem(105px);\A 11:     padding-left: rem(100px);\A 12:     @include tablets {\A 13:         left: 0;\A 14:         display: flex;\A 15:         flex-direction: column;\A 16:         align-items: center;\A 17:         padding-left: rem(0px);"; }

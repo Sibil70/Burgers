@@ -692,7 +692,6 @@ address {
   @media screen and (max-width: 768px) {
     .team-accordeon {
       left: 0;
-      text-align: center;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -700,9 +699,9 @@ address {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       padding-left: 0rem; } }
 
 .team__title {
@@ -718,13 +717,22 @@ address {
           flex-direction: column; }
   @media screen and (max-width: 768px) {
     .team-accordeon__list {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      text-align: center; } }
+              align-items: center; } }
+
+@media screen and (max-width: 768px) {
+  .team-accordeon__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 .team-accordeon__trigger {
   font-family: 'gagalin', Helvetica, sans-serif;
@@ -747,8 +755,9 @@ address {
     background: url(../img/team/btn_up.png) center center no-repeat; }
   @media screen and (max-width: 768px) {
     .team-accordeon__trigger {
-      margin-left: 5.625rem;
-      text-align: center; } }
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .team-accordeon__trigger--active {
   color: #f9b43b; }
@@ -794,47 +803,74 @@ address {
   background: url(../img/menu/bg_menu.jpg) center center/cover no-repeat;
   position: relative; }
 
-.menu-accordeon {
-  color: #FFF;
+.menu__title {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0; }
+  top: 6.875rem;
+  left: 4.6875rem;
+  color: white; }
+  @media screen and (max-width: 768px) {
+    .menu__title {
+      overflow: hidden; } }
+  @media screen and (max-width: 480px) {
+    .menu__title {
+      display: none; } }
 
-.menu-accordeon__list {
+.menu-accordeon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
-
-.menu-accordeon__item {
+          justify-content: flex-end;
   height: 100%; }
 
+.menu-accordeon__list {
+  color: #fff;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%; }
+
+.menu-accordeon__item {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .menu-accordeon__triger {
+  display: inline-block;
+  min-width: 5rem;
+  width: 5rem;
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.menu-accordeon__triger-text {
   text-decoration: none;
   font-size: 40px;
   color: #FFF;
+  position: absolute;
   font-family: 'gagalin', helvetica, sans-serif;
-  width: 80px;
-  height: 100%;
-  display: inline-block; }
-
-.menu-accordeon__triger-text {
-  font-size: 40px;
-  height: 100%;
-  text-align: center;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   white-space: nowrap;
-  -webkit-transform: rotate(-90deg) translateY(-50%);
-          transform: rotate(-90deg) translateY(-50%);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  margin-top: -20px; }
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%; }
+  .menu-accordeon__triger-text--active {
+    color: #f9b43b; }
 
 .menu-accordeon__cont {
-  display: none; }
+  width: 0;
+  overflow: hidden; }
+  .menu-accordeon__cont--active {
+    width: 34.375rem;
+    background-color: rgba(59, 57, 54, 0.7); }
+
+.menu-accordeon__text {
+  padding: 4.375rem 2.5rem; }
 
 .map {
   background: url(../img/map/map.jpg) center center/cover no-repeat; }
