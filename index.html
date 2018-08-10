@@ -77,6 +77,7 @@
         </div>
     </div>
     </section>
+    
     <section class="section we" id="we">
         <div class="container we__container">
             <h2 class="title title__black">Мы лучшие</h2>
@@ -111,6 +112,90 @@
             </ul>
         </div>
     </section>
+
+    <section class="section burgers">
+            <div class="arrow">
+                    <a class="arrow__btn arrow__btn--left" href="#">
+                        <svg class="arrow-scroll">
+                            <use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
+                        </svg> 
+                    </a>
+            </div>
+            <div class="slider">
+                <div class="slider__hide-menu">
+                    <div class="hide-menu__btn">
+                        <img src="./img/budgers_slider/icons/burger.svg" alt="burger" class="hide-menu__img-pic">
+                        <span class="hide-menu__text">состав</span>
+                    </div>
+                    <div class="hide-menu__wrapper">
+                    <ul class="hide-menu__list">
+                            <li class="hide-menu__item">
+                                <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/beef.svg" alt="menu-item" >
+                                <div class="hide-menu__item__ingredient">Говядина</div>
+                                <div class="hide-menu__item__value">300 г</div>
+                            </li>
+                            <li class="hide-menu__item">
+                                    <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/buns.svg" alt="menu-item" >
+                                    <div class="hide-menu__item__ingredient">Булочки</div>
+                                    <div class="hide-menu__item__value">100 г</div>        
+                            </li>
+                            <li class="hide-menu__item">
+                                    <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/salad.svg" alt="menu-item" >
+                                    <div class="hide-menu__item__ingredient">Зелень</div>
+                                    <div class="hide-menu__item__value">70 г</div>
+                            </li>
+                            <li class="hide-menu__item">
+                                    <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/sauce.svg" alt="menu-item" >
+                                    <div class="hide-menu__item__ingredient">Соус</div>
+                                    <div class="hide-menu__item__value">150 г</div>
+                            </li>
+                            <li class="hide-menu__item">
+                                    <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/cucumber.svg" alt="menu-item" >
+                                    <div class="hide-menu__item__ingredient">Овощи</div>
+                                    <div class="hide-menu__item__value">200 г</div>
+                            </li>
+                            <li class="hide-menu__item">
+                                    <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/cheese.svg" alt="menu-item" >
+                                    <div class="hide-menu__item__ingredient">Сыр</div>
+                                    <div class="hide-menu__item__value">80 г</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider__kall">
+                        <img src="./img/budgers_slider/icons/kkal.svg" alt="call" class="slider__kall-img">
+                        <span class="slider__kall-val">1200</span>
+                        <span class="slider__kall-text">Калл</span>
+                </div>
+                <div class="slider__pic">
+                    <img src="./img/budgers_slider/burger_black.svg" alt="darkburger" class="slider__pic-img"> 
+                </div>
+                <div class="slider__cont">
+                    <ul class="slider__cont__list">
+                        <li class="slider__cont__item">
+                            <h2 class="title title__white">dark beef burger</h2>
+                            <div class="cont__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежного
+                                    сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                            <div class="slider__order">
+                                <div class="cont__price">500</div>
+                                <div class="cont__price cont__price--currency">рублей</div>
+                                <div class="button">
+                                    <button class="button button__red">заказать</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="arrow">
+                    <a class="arrow__btn arrow__btn--right" href="#">
+                        <svg class="arrow-scroll">
+                            <use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
+                        </svg> 
+                    </a>
+            </div>
+    </section>
+
     <section class="section team" id="team">
         <div class="team-accordeon">
             <h2 class="title team__title title__yellow">команда</h2>
@@ -158,13 +243,14 @@
             </ul>
         </div>
     </section>
+    
     <section class="section menu">
         <h2 class="title menu__title"> меню</h2>
         <div class="menu-accordeon">
             <ul class="menu-accordeon__list">
                 <li class="menu-accordeon__item">
                     <a href="#" class="menu-accordeon__triger" style="background-image: url('./img/menu/triger-meat.jpg')">
-                        <div class="menu-accordeon__triger-text">для мясоедов</div>
+                        <div class="menu-accordeon__triger-text menu-accordeon__triger-text--active">для мясоедов</div>
                     </a>
                     <div class="menu-accordeon__cont menu-accordeon__cont--active">
                         <div class="menu-accordeon__text">
@@ -210,7 +296,7 @@
             </ul>
         </div>
     </section>
-<section class="section burgers__slider"></section>
+    
     <section class="section feedback" id="reviews">
             <ul class="feedback__list">
                 <li class="feedback__item" style="background-image: url(./img/feedback/photo1.jpg);">
@@ -326,7 +412,9 @@
                 </li>
             </ul>
     </section>
+    
     <section class="section workflow"></section>
+    
     <section class="section order">
         <div class="container order__container">
             <h2 class="title order__title title__yellow">закажите доставку</h2>
@@ -404,6 +492,7 @@
             </form>
         </div>
     </section>
+
     <section class="section map">
     </section>
 </div>

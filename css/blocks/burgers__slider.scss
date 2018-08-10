@@ -1,0 +1,48 @@
+.burgers{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.slider{
+    display: flex;
+    position: relative;
+}
+.slider__cont__item{
+    color: #fff;
+}
+.title{
+    &__white {
+        color: #fff;
+        margin-bottom: rem(25px);
+    }
+}
+.cont__text{
+    line-height: 2;
+    margin-bottom: rem(15px);
+}
+.slider__order {
+    display: flex;
+    align-items: flex-end;
+
+}
+.cont__price {
+    font-family: 'gagalin';
+    letter-spacing: 0.02em;
+    color: $orange;
+    font-size: rem(70px);
+    margin-right: rem(10px);
+    &--currency {
+        font-size: rem(40px);
+        margin-right: rem(20px);
+    }
+}
+.arrow__btn {
+    &--left {
+        transform: rotate(90deg);
+    }
+}
+.arrow__btn {
+    &--right {
+        transform: rotate(-90deg);
+    }
+}

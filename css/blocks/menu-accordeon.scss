@@ -40,9 +40,10 @@
 .menu-accordeon__cont {
     width: 0;
     overflow: hidden;
+    z-index: 2;
     &--active{
         width: rem(550px);
-        background-color: rgba(59, 57, 54, 0.7);
+        background-color: rgba(59, 57, 54, 0.93);
     }
 }
 
