@@ -49,14 +49,14 @@
     align-items: center;
     justify-content: space-around;
 }
-.hide-menu__item__pic{
+.hide-menu__item-pic{
     margin-right: rem(15px);
 }
-.hide-menu__item__ingredient{
+.hide-menu__item-ingredient{
     flex: 0.9;
 }
 
-.hide-menu__cross {
+.hide-menu__item-cross {
     background: #CD6D45;
     height: 10px; width: 2px;
     position: relative;

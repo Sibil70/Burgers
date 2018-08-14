@@ -8,7 +8,7 @@
 .logo{
     flex: 1;
 }
-.logo-icon {
+.logo__icon {
     width: rem(90px);
     height: rem(70px);
 }
@@ -46,24 +46,10 @@
     }
 }
 
-.item__link{
+.nav__link{
     color: #efefef;
     text-decoration: none;
     font-weight: 500;
     font-size: rem(13px);
     text-transform: uppercase;
-}
-.button{
-    cursor: pointer;
-    color: #fff;
-    width: rem(100px);
-    height: rem(35px);
-    border: none;
-    border-radius: rem(5px);
-    &__red {
-        background-color: $orange;
-        &:hover{
-            background-color: #c1401e;
-        }
-    }
 }

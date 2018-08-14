@@ -1,0 +1,23 @@
+.title  {
+    display: inline-block;
+    font-family: 'gagalin';
+    font-size: rem(70px);
+    letter-spacing: 0.02em;
+    &--yellow{
+        color: $yellow;
+        font-size: rem(75px);
+    }
+    &--black {
+        margin-bottom: rem(50px);
+    }
+    &--white {
+        color: #fff;
+        margin-bottom: rem(25px);
+    }
+}
+.order__title {
+    @include tablets {
+        text-align: center;
+        margin-bottom: rem(32px);
+    }
+}

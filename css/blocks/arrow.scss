@@ -2,7 +2,18 @@
     display: flex;
     justify-content: center;
 }
-.arrow-scroll {
+.arrow__scroll {
     width: rem(29px);
     height: rem(14px);
+}
+//slider buttons
+.arrow__btn {
+    &--left {
+        transform: rotate(90deg);
+    }
+}
+.arrow__btn {
+    &--right {
+        transform: rotate(-90deg);
+    }
 }

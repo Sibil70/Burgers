@@ -1,4 +1,4 @@
-.maincontent{
+.firstpagecontent{
     display: flex;
     margin-bottom: rem(81px);
     align-items: center;
@@ -9,7 +9,7 @@
         justify-content: center;
     }
 }
-.main__pic{
+.firstpagecontent__pic-wrap{
     position: relative;
     margin-left: rem(52px);
     @include phones {
@@ -17,11 +17,11 @@
         height: auto;
     }
 }
-.pic__burger {
+.firstpagecontent__burger {
     width: 100%;
     height: auto;
 }
-.pic__drops{
+.firstpagecontent__drops{
     position: absolute;
     top: 16%;
     left: -3%;
@@ -29,7 +29,7 @@
     width: 100%;
     height: auto;
 }
-.main__text{
+.firstpagecontent__text{
     padding-left: rem(12px);
     padding-top: rem(60px);
     color: #efefef;
@@ -41,17 +41,7 @@
         text-align: center;
     }
 }
-.title  {
-    display: inline-block;
-    font-family: 'gagalin';
-    font-size: rem(70px);
-    letter-spacing: 0.02em;
-    &__yellow{
-        color: $yellow;
-        font-size: rem(75px);
-    }
-}
-.text__regular{
+.firstpagecontent__subtitle{
     display: inline-block;
     font-family: 'lifehack';
     font-size: rem(65px);

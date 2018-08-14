@@ -19,8 +19,10 @@ $phones: 480px;
 @import "./layout/layout.scss";
 @import "./layout/fonts.scss";
 //blocks
-@import "./blocks/first-screen.scss";
-@import "./blocks/main__cont.scss";
+@import "./blocks/firstpage.scss";
+@import "./blocks/buttons.scss";
+@import "./blocks/titles.scss";
+@import "./blocks/firstpagecontent.scss";
 @import "./blocks/arrow.scss";
 @import "./blocks/header.scss";
 @import "./blocks/we__list.scss";

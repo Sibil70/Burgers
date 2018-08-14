@@ -6,7 +6,7 @@
         flex-direction: column;
     }
 }
-.list__item {
+.we__item {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
@@ -16,7 +16,7 @@
         flex-direction: initial;
     }
 }
-.item__icon {
+.we__icon {
     width: rem(97px);
     height: rem(89px);
     margin-bottom: rem(38px);
@@ -24,7 +24,7 @@
         margin-right: rem(25px);
     }
 }
-.item__title{
+.we__title{
     align-self: center;
     font-family: 'lifehack';
     text-align: center;
@@ -34,7 +34,7 @@
         text-align: initial;
     }
 }
-.item__text {
+.we__text {
     font-family: 'ubuntu';
     text-align: center;
     font-size: rem(14px);

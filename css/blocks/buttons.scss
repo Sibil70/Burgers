@@ -1,0 +1,23 @@
+.button{
+    cursor: pointer;
+    color: #fff;
+    width: rem(100px);
+    height: rem(35px);
+    border: none;
+    border-radius: rem(5px);
+    &--red {
+        background-color: $orange;
+        &:hover{
+            background-color: #c1401e;
+        }
+    }
+    &__black {
+        background-color: $black;
+            width: rem(110px);
+            height: rem(35px);
+        &:hover{
+            cursor: pointer;
+            background: #1f2122;
+        }
+    }
+}

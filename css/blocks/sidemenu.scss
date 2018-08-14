@@ -1,16 +1,16 @@
-.menu__points{
+.sidemenu{
     position: fixed;
     right: rem(50px);
     top: rem(90px);
 }
-.points__list{
+.sidemenu__list{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
 }
-.points__item {
+.sidemenu__item {
         display: block;
         width: rem(5px);
         height: rem(5px);
@@ -20,26 +20,27 @@
         margin: rem(8px);
         position: relative;
         cursor: pointer;
-}
-.points__item-active::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -95%;
-    left: -95%;
-    width: rem(15px);
-    height: rem(15px);
-    border: rem(1px) solid white;
-    border-radius: 50%;
-}
-.points__item:hover::before {
-content: "";
-display: block;
-position: absolute;
-top: -95%;
-left: -95%;
-width: rem(15px);
-height: rem(15px);
-border: rem(1px) solid white;
-border-radius: 50%;
+        &--active::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -95%;
+            left: -95%;
+            width: rem(15px);
+            height: rem(15px);
+            border: rem(1px) solid white;
+            border-radius: 50%;
+
+        }
+        &:hover::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -95%;
+            left: -95%;
+            width: rem(15px);
+            height: rem(15px);
+            border: rem(1px) solid white;
+            border-radius: 50%;
+            }
 }

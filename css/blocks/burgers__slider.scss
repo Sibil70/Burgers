@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: space-around;
 }
-
 .slider{
     display: flex;
     position: relative;
@@ -11,7 +10,7 @@
         flex-direction: column;
     }
 }
-.slider__cont__item{
+.slider__item{
     color: #fff;
     @include tablets {
         flex-direction: column;
@@ -20,13 +19,7 @@
         width: 95%
     }
 }
-.title{
-    &__white {
-        color: #fff;
-        margin-bottom: rem(25px);
-    }
-}
-.cont__text{
+.slider__text{
     line-height: 2;
     margin-bottom: rem(15px);
 }
@@ -36,9 +29,8 @@
     @include tablets {
         justify-content: center;
     }
-
 }
-.cont__price {
+.slider__price {
     font-family: 'gagalin';
     letter-spacing: 0.02em;
     color: $orange;
@@ -47,15 +39,5 @@
     &--currency {
         font-size: rem(40px);
         margin-right: rem(20px);
-    }
-}
-.arrow__btn {
-    &--left {
-        transform: rotate(90deg);
-    }
-}
-.arrow__btn {
-    &--right {
-        transform: rotate(-90deg);
     }
 }

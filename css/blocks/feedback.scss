@@ -31,7 +31,7 @@
         @include tablets {
             align-items: center;
         }
-        .content__text{
+        .feedback__text{
             overflow: hidden;
             @include phones {
                 display: none;
@@ -43,7 +43,7 @@
         }
     }
 }
-.content__user{
+.feedback__user{
     margin-bottom: rem(22px);
     font-family: 'gagalin';
     font-size:   rem(14px);
@@ -53,22 +53,10 @@
     }
 }
 
-.content__text{
+.feedback__text{
         font-family: 'ubuntu';
         font-size: rem(14px);
         font-weight: 300;
         line-height: 1.70em;
         margin: 0 0 rem(25px) 0;
-}
-
-.button{
-    &__black {
-        background-color: $black;
-            width: rem(110px);
-            height: rem(35px);
-        &:hover{
-            cursor: pointer;
-            background: #1f2122;
-        }
-    }
 }
