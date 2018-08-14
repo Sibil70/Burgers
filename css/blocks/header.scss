@@ -16,13 +16,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @include tablets {
-        display: none;
-    }
 }
 .nav__list {
     display: flex;
-     align-items: center;
+    align-items: center;
+    @include tablets {
+       display: none;
+    }
 }
 .nav__item{
     display: flex;
@@ -34,9 +34,9 @@
         content: "";
         display: block;
         margin-right: rem(10px);
-        width: rem(4px);
-        height: rem(4px);
-        border: rem(4px) solid #fff;
+        width: rem(3px);
+        height: rem(3px);
+        border: rem(3px) solid #fff;
         border-radius: 50%;
         }
 }

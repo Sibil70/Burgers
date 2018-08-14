@@ -1,6 +1,9 @@
 .slider__hide-menu {
     position: absolute;
-    top: -18%;
+    top: -20%;
+    @include tablets {
+        top: -10%;
+    }
 }
 .hide-menu__btn{
     background-color: #f08c33;
@@ -13,9 +16,8 @@
     &:hover{
         background-color: $red;
     }
-    &:hover~.hide-menu__wrapper{
-        display: block;
-
+    &:hover .hide-menu__wrapper{
+        visibility: initial;
     }
 }
 .hide-menu__img-pic{
@@ -27,7 +29,7 @@
     font-size: rem(12px);
 }
 .hide-menu__wrapper {
-    display: none;
+    visibility: hidden;
 }
 .hide-menu__list {
     width: rem(270px);
@@ -52,4 +54,23 @@
 }
 .hide-menu__item__ingredient{
     flex: 0.9;
+}
+
+.hide-menu__cross {
+    background: #CD6D45;
+    height: 10px; width: 2px;
+    position: relative;
+    left: rem(10px);
+    top: rem(-25px);
+    transform: rotate(-45deg);
+    display: none;
+        @include tablets {
+            display: initial;
+        }
+    &:after{
+    content: "";
+    height: 2px; width: 10px;
+    background: #CD6D45;
+    position: absolute; left: -4px; top: 4px;
+    }
 }

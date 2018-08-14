@@ -3,6 +3,10 @@
     top: 100%;
     color: #fff;
     opacity: 0.5;
+    @include tablets {
+        top: -8%;
+        left: 80%;
+    }
 }
 .slider__kall-val {
     position: absolute;

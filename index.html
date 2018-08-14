@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
     <link rel="manifest" href="./img/favicon/site.webmanifest">
     <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <!-- <script src="./js/main.js"></script> -->
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>BestBurger</title>
@@ -114,6 +115,7 @@
     </section>
 
     <section class="section burgers">
+        <div class="container burgers__container">
             <div class="arrow">
                     <a class="arrow__btn arrow__btn--left" href="#">
                         <svg class="arrow-scroll">
@@ -126,40 +128,42 @@
                     <div class="hide-menu__btn">
                         <img src="./img/budgers_slider/icons/burger.svg" alt="burger" class="hide-menu__img-pic">
                         <span class="hide-menu__text">состав</span>
-                    </div>
-                    <div class="hide-menu__wrapper">
-                    <ul class="hide-menu__list">
-                            <li class="hide-menu__item">
-                                <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/beef.svg" alt="menu-item" >
-                                <div class="hide-menu__item__ingredient">Говядина</div>
-                                <div class="hide-menu__item__value">300 г</div>
-                            </li>
-                            <li class="hide-menu__item">
-                                    <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/buns.svg" alt="menu-item" >
-                                    <div class="hide-menu__item__ingredient">Булочки</div>
-                                    <div class="hide-menu__item__value">100 г</div>        
-                            </li>
-                            <li class="hide-menu__item">
-                                    <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/salad.svg" alt="menu-item" >
-                                    <div class="hide-menu__item__ingredient">Зелень</div>
-                                    <div class="hide-menu__item__value">70 г</div>
-                            </li>
-                            <li class="hide-menu__item">
-                                    <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/sauce.svg" alt="menu-item" >
-                                    <div class="hide-menu__item__ingredient">Соус</div>
-                                    <div class="hide-menu__item__value">150 г</div>
-                            </li>
-                            <li class="hide-menu__item">
-                                    <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/cucumber.svg" alt="menu-item" >
-                                    <div class="hide-menu__item__ingredient">Овощи</div>
-                                    <div class="hide-menu__item__value">200 г</div>
-                            </li>
-                            <li class="hide-menu__item">
-                                    <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/cheese.svg" alt="menu-item" >
-                                    <div class="hide-menu__item__ingredient">Сыр</div>
-                                    <div class="hide-menu__item__value">80 г</div>
-                            </li>
-                        </ul>
+                        <div class="hide-menu__wrapper">
+                            <ul class="hide-menu__list">
+                                    <li class="hide-menu__item">
+                                        <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/beef.svg" alt="menu-item" >
+                                        <div class="hide-menu__item__ingredient">Говядина</div>
+                                        <div class="hide-menu__item__value">300 г</div>
+                                        <div class="hide-menu__cross">
+                                        </div>
+                                    </li>
+                                    <li class="hide-menu__item">
+                                            <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/buns.svg" alt="menu-item" >
+                                            <div class="hide-menu__item__ingredient">Булочки</div>
+                                            <div class="hide-menu__item__value">100 г</div>        
+                                    </li>
+                                    <li class="hide-menu__item">
+                                            <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/salad.svg" alt="menu-item" >
+                                            <div class="hide-menu__item__ingredient">Зелень</div>
+                                            <div class="hide-menu__item__value">70 г</div>
+                                    </li>
+                                    <li class="hide-menu__item">
+                                            <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/sauce.svg" alt="menu-item" >
+                                            <div class="hide-menu__item__ingredient">Соус</div>
+                                            <div class="hide-menu__item__value">150 г</div>
+                                    </li>
+                                    <li class="hide-menu__item">
+                                            <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/cucumber.svg" alt="menu-item" >
+                                            <div class="hide-menu__item__ingredient">Овощи</div>
+                                            <div class="hide-menu__item__value">200 г</div>
+                                    </li>
+                                    <li class="hide-menu__item">
+                                            <img class="hide-menu__item__pic" src="./img/budgers_slider/icons/cheese.svg" alt="menu-item" >
+                                            <div class="hide-menu__item__ingredient">Сыр</div>
+                                            <div class="hide-menu__item__value">80 г</div>
+                                    </li>
+                                </ul>
+                            </div>
                     </div>
                 </div>
                 <div class="slider__kall">
@@ -194,6 +198,7 @@
                         </svg> 
                     </a>
             </div>
+        </div>
     </section>
 
     <section class="section team" id="team">
@@ -496,6 +501,37 @@
     <section class="section map">
     </section>
 </div>
+<div class="fullscreen-menu">
+        <div class="fullscreen-menu__logo">
+            <svg class="logo-icon">
+                <use xlink:href="./img/icons/sprite.svg#logo"></use>
+            </svg> 
+        </div>
+        <ul class="fullscreen-menu__list">
+            <li class="fullscreen-menu__item">
+                <a class="item__link" href="#we">о нас</a>
+            </li>
+            <li class="fullscreen-menu__item">
+                <a class="item__link" href="#">бургеры</a>
+            </li>
+            <li class="fullscreen-menu__item">
+                <a class="item__link" href="#team">команда</a>
+            </li>
+            <li class="fullscreen-menu__item">
+                <a class="item__link" href="#">меню</a>
+            </li>
+            <li class="fullscreen-menu__item">
+                <a class="item__link" href="#reviews">отзывы</a>
+            </li>
+            <!-- <li class="fullscreen-menu__item">
+                <a class="item__link" href="#">как мы работаем</a>
+            </li> -->
+            <li class="fullscreen-menu__item">
+                <a class="item__link" href="#">контакты</a>
+            </li>
+        </ul>
+        <a href="#" class="fullscreen-menu__close"></a>
+    </div>
 <footer class="footer">
     <div class="container">
     <div class="footer-wrapper">
@@ -547,5 +583,34 @@
         <li class="points__item"><a href="#" class="item__link"></a></li>
     </ul>
 </div>
+
+<script> 
+const hamburger = document.querySelector (".hamburger-menu");
+const fullScreenMenu = document.querySelector ('.fullscreen-menu');
+const closeMenu = document.querySelector (".fullscreen-menu__close");
+const closeHideMenu = document.querySelector (".hide-menu__cross");
+const HideMenu = document.querySelector (".hide-menu__wrapper");
+const ShowMenu = document.querySelector (".hide-menu__btn");
+
+
+hamburger.addEventListener ('click', function (e){
+    fullScreenMenu.style.display = "flex";
+    document.body.classList.add('blocked-scroll');
+});
+
+closeMenu.addEventListener ('click', function (e){
+    e.preventDefault ();
+    fullScreenMenu.style.display = "none";
+    document.body.classList.remove('blocked-scroll');
+});
+
+closeHideMenu.addEventListener ('click', function (e){
+    HideMenu.style.visibility = "hidden";
+});
+ShowMenu.addEventListener ('mouseover', function (e){
+    HideMenu.removeAttribute("style");;
+});
+
+</script>
 </body>
 </html>

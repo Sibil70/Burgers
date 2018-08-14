@@ -1,14 +1,24 @@
-.burgers{
+.burgers__container{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
 .slider{
     display: flex;
     position: relative;
+    @include tablets {
+        flex-direction: column;
+    }
 }
 .slider__cont__item{
     color: #fff;
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 95%
+    }
 }
 .title{
     &__white {
@@ -23,6 +33,9 @@
 .slider__order {
     display: flex;
     align-items: flex-end;
+    @include tablets {
+        justify-content: center;
+    }
 
 }
 .cont__price {
