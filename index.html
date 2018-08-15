@@ -202,7 +202,7 @@
             <h2 class="title team__title title--yellow">команда</h2>
             <ul class="team-accordeon__list">
                 <li class="team-accordeon__item">
-                    <h3 class="team-accordeon__trigger">дэниэл редклиф</h3>
+                    <h3 class="team-accordeon__trigger ">дэниэл редклиф</h3>
                     <div class="team-accordeon__content">
                         <img class="team-accordeon__content-photo" src="./img/team/richard.jpg" alt="photo">
                         <div class="team-accordeon__description">
@@ -563,12 +563,10 @@
 </div>
 
 <script> 
+//  открытие/закрытие полноэкранного меню "по клику на гамбургер меню в адаптивах"
 const hamburger = document.querySelector (".hamburger-menu");
 const fullScreenMenu = document.querySelector ('.fullscreen-menu');
 const closeMenu = document.querySelector (".fullscreen-menu__close");
-const closeHideMenu = document.querySelector (".hide-menu__item-cross");
-const HideMenu = document.querySelector (".hide-menu__wrapper");
-const ShowMenu = document.querySelector (".hide-menu__btn");
 
 hamburger.addEventListener ('click', function (e){
     fullScreenMenu.style.display = "flex";
@@ -580,13 +578,52 @@ closeMenu.addEventListener ('click', function (e){
     fullScreenMenu.style.display = "none";
     document.body.classList.remove('blocked-scroll');
 });
+//  открытие/закрытие меню "состав на слайдере"
+const closeHideMenu = document.querySelector (".hide-menu__item-cross");
+const HideMenu = document.querySelector (".hide-menu__wrapper");
+const ShowMenu = document.querySelector (".hide-menu__btn");
 
 closeHideMenu.addEventListener ('click', function (e){
     HideMenu.style.visibility = "hidden";
 });
 ShowMenu.addEventListener ('mouseover', function (e){
-    HideMenu.removeAttribute("style");;
+    HideMenu.removeAttribute("style");
 });
+//  карусель секции team
+// var accordeon = document.querySelector('.team-accordeon');
+let openTeamMate = document.querySelector (".team-accordeon__item");
+let TeamMate = openTeamMate.firstElementChild;
+
+    console.log (openTeamMate);
+    console.log (TeamMate);
+    openTeamMate.addEventListener ('click', function (e) {
+    if (TeamMate.classList.contains ('team-accordeon__trigger--active'))
+    { TeamMate.classList.remove ('team-accordeon__trigger--active');
+    } else 
+    {TeamMate.classList.add ("team-accordeon__trigger--active");
+}
+});
+
+// этот не очень работает!!!!!!
+// var accordeon = document.querySelector('.team-accordeon');
+
+// var i;
+
+// accordeon.addEventListener('click', function(e) {
+//   console.log("e.target");
+//   console.log(e.target);
+//   if (e.target.classList.contains('team-accordeon__trigger') ) {
+//     var trigger = e.target;
+//     var content = trigger.nextElementSibling;
+    
+//     if (content.style.height) {
+//       content.style.height = null;
+//     } else {
+//       content.style.height = content.scrollHeight + 'px';      
+//     }
+//   }
+
+// });
 </script>
 </body>
 </html>

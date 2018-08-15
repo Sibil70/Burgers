@@ -28,6 +28,7 @@
     }
 }
 .team-accordeon__item{
+
     @include tablets {
         display: flex;
         flex-direction: column;
@@ -35,6 +36,7 @@
     }
 }
 .team-accordeon__trigger {
+    cursor: pointer;
     font-family: 'gagalin', Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: rem(32px);

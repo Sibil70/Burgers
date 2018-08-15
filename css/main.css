@@ -741,6 +741,7 @@ address {
             align-items: center; } }
 
 .team-accordeon__trigger {
+  cursor: pointer;
   font-family: 'gagalin', Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 2rem;

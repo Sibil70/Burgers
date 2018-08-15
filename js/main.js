@@ -1,4 +1,4 @@
-console.log ('я подключен!');
+// console.log ('я подключен!');
 // const hamburger = document.querySelector (".hamburger-menu");
 // const fullscreenmenu = document.getElementsByClassName ('fullscreen-menu');
 // const closeMenu = document.querySelector (".fullscreen-menu__close");
