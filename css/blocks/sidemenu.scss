@@ -29,7 +29,8 @@
             width: rem(15px);
             height: rem(15px);
             border: rem(1px) solid white;
-            border-radius: 50%;
+            border-radius: 50%;z-index:1; 
+            ;
 
         }
         &:hover::before {
@@ -42,5 +43,6 @@
             height: rem(15px);
             border: rem(1px) solid white;
             border-radius: 50%;
+            z-index:1; 
             }
 }

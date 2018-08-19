@@ -28,7 +28,7 @@
     }
 }
 .team-accordeon__item{
-
+    display: inline-block;
     @include tablets {
         display: flex;
         flex-direction: column;
@@ -40,7 +40,7 @@
     font-family: 'gagalin', Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: rem(32px);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     color: #fff;
     margin-bottom: rem(25px);
@@ -53,7 +53,6 @@
         background: url(../img/team/btn_up.png) center center no-repeat;
     }
     @include tablets {
-        // margin-left: rem(90px);
         align-items: center;
     }
 }

@@ -14,6 +14,10 @@ body.blocked-scroll {
     justify-content: space-between;
     z-index: 10000;
 }
+.fullscreen-menu__icon {
+    width: rem(90px);
+    height: rem(70px);
+}
 .fullscreen-menu__list {
     align-self: center;
     display: flex;

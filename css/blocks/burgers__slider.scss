@@ -3,6 +3,11 @@
     align-items: center;
     justify-content: space-around;
 }
+.slider-items {
+    display: flex;
+    max-width: rem(880px);
+    position: relative;
+}
 .slider{
     display: flex;
     position: relative;
@@ -10,16 +15,8 @@
         flex-direction: column;
     }
 }
-.slider__item{
-    color: #fff;
-    @include tablets {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        width: 95%
-    }
-}
 .slider__text{
+    color: #fff;
     line-height: 2;
     margin-bottom: rem(15px);
 }

@@ -14,16 +14,31 @@
     display: flex;
 }
 .menu-accordeon__triger {
+    cursor: pointer;
     display: inline-block;
     min-width: rem(80px);
-    width: rem(80px);
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+    &--active .menu-accordeon__triger-text{
+        color: $yellow;
+    }
+    &--active + .menu-accordeon__cont{
+        width: rem(550px);
+        @include tablets {
+            width: 50vw;
+            font-size: rem(13px);
+            }
+        @include phones {
+            width: 50vw;
+            font-size: rem(13px);
+            }
+        background-color: rgba(59, 57, 54, 0.93);
+    }
 }
 .menu-accordeon__triger-text {
-    text-decoration: none;
-    font-size: 40px;
+    display: block;
+    font-size: rem(40px);
     color: #FFF;
     position: absolute;
     font-family: 'gagalin', helvetica, sans-serif;
@@ -32,21 +47,13 @@
     transform: rotate(-90deg);
     white-space: nowrap;
     transform-origin: 0 50%;
-    &--active {
-        color: $yellow;
-    }
 }
-
 .menu-accordeon__cont {
     width: 0;
+    line-height: 1.7;
     overflow: hidden;
     z-index: 2;
-    &--active{
-        width: rem(550px);
-        background-color: rgba(59, 57, 54, 0.93);
-    }
 }
-
 .menu-accordeon__text {
     padding: rem(70px) rem(40px);
 }

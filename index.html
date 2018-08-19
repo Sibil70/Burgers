@@ -10,7 +10,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
     <link rel="manifest" href="./img/favicon/site.webmanifest">
     <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <!-- <script src="./js/main.js"></script> -->
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/order.js"></script>
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>BestBurger</title>
@@ -31,26 +32,26 @@
                     <a class="nav__link" href="#we">о нас</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">бургеры</a>
+                    <a class="nav__link" href="#burgers">бургеры</a>
                 </li>
                 <li class="nav__item">
                     <a class="nav__link" href="#team">команда</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">меню</a>
+                    <a class="nav__link" href="#menu">меню</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#reviews">отзывы</a>
+                    <a class="nav__link" href="#feedback">отзывы</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">как мы работаем</a>
+                    <a class="nav__link" href="#workflow">как мы работаем</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">контакты</a>
+                    <a class="nav__link" href="#adress">контакты</a>
                 </li>
             </ul>
         </nav>
-            <button class="button button--red">заказать</button>
+            <button class="button button--red" >заказать</button>
         <div class="hamburger-menu">
             <div class="hamburger-menu__item"></div>
             <div class="hamburger-menu__item"></div>
@@ -68,11 +69,11 @@
             </div>
         </div>
         <div class="arrow">
-            <a class="arrow__btn" href="#">
+            <span class="arrow__btn">
                 <svg class="arrow__scroll">
                     <use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
                 </svg> 
-            </a>
+            </span>
         </div>
     </div>
     </section>
@@ -114,12 +115,137 @@
 
     <section class="section burgers" id="burgers">
         <div class="container burgers__container">
-            <div class="arrow">
-                    <a class="arrow__btn arrow__btn--left" href="#">
+            <div class="arrow" id="left">
+                    <span class="arrow__btn arrow__btn--left" href="#">
                         <svg class="arrow__scroll">
                             <use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
                         </svg> 
-                    </a>
+                    </span>
+            </div>
+            <div class="slider-items" id="slideritems">
+            <div class="slider">
+                <div class="slider__hide-menu hide-menu">
+                    <div class="hide-menu__btn">
+                        <img class="hide-menu__img-pic" src="./img/budgers_slider/icons/burger.svg" alt="burger">
+                        <span class="hide-menu__text">состав</span>
+                        <div class="hide-menu__wrapper">
+                            <ul class="hide-menu__list">
+                                    <li class="hide-menu__item">
+                                        <img class="hide-menu__item-pic" src="./img/budgers_slider/icons/beef.svg" alt="menu-item" >
+                                        <div class="hide-menu__item-ingredient">Говядина</div>
+                                        <div class="hide-menu__item-value">300 г</div>
+                                        <div class="hide-menu__item-cross">
+                                        </div>
+                                    </li>
+                                    <li class="hide-menu__item">
+                                            <img class="hide-menu__item-pic" src="./img/budgers_slider/icons/buns.svg" alt="menu-item" >
+                                            <div class="hide-menu__item-ingredient">Булочки</div>
+                                            <div class="hide-menu__item-value">100 г</div>        
+                                    </li>
+                                    <li class="hide-menu__item">
+                                            <img class="hide-menu__item-pic" src="./img/budgers_slider/icons/salad.svg" alt="menu-item" >
+                                            <div class="hide-menu__item-ingredient">Зелень</div>
+                                            <div class="hide-menu__item-value">70 г</div>
+                                    </li>
+                                    <li class="hide-menu__item">
+                                            <img class="hide-menu__item-pic" src="./img/budgers_slider/icons/sauce.svg" alt="menu-item" >
+                                            <div class="hide-menu__item-ingredient">Соус</div>
+                                            <div class="hide-menu__item-value">150 г</div>
+                                    </li>
+                                    <li class="hide-menu__item">
+                                            <img class="hide-menu__item-pic" src="./img/budgers_slider/icons/cucumber.svg" alt="menu-item" >
+                                            <div class="hide-menu__item-ingredient">Овощи</div>
+                                            <div class="hide-menu__item-value">200 г</div>
+                                    </li>
+                                    <li class="hide-menu__item">
+                                            <img class="hide-menu__item-pic" src="./img/budgers_slider/icons/cheese.svg" alt="menu-item" >
+                                            <div class="hide-menu__item-ingredient">Сыр</div>
+                                            <div class="hide-menu__item-value">80 г</div>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+                <div class="slider__kall">
+                        <img src="./img/budgers_slider/icons/kkal.svg" alt="call" class="slider__kall-img">
+                        <span class="slider__kall-val">1200</span>
+                        <span class="slider__kall-text">Калл</span>
+                </div>
+                <div class="slider__pic">
+                    <img src="./img/budgers_slider/burger_black.svg" alt="darkburger" class="slider__pic-img"> 
+                </div>
+                <div class="slider__cont">
+                        <h2 class="slider__title title title--white">dark beef burger</h2>
+                        <div class="slider__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежного
+                                сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                        <div class="slider__order">
+                            <div class="slider__price">500</div>
+                            <div class="slider__price slider__price--currency">рублей</div>
+                                <button class="button button--red">заказать</button>
+                        </div>
+                </div>
+            </div>
+            <!-- <div class="slider">
+                <div class="slider__hide-menu hide-menu">
+                    <div class="hide-menu__btn">
+                        <img class="hide-menu__img-pic" src="./img/budgers_slider/icons/burger.svg" alt="burger">
+                        <span class="hide-menu__text">состав</span>
+                        <div class="hide-menu__wrapper">
+                            <ul class="hide-menu__list">
+                                    <li class="hide-menu__item">
+                                        <img class="hide-menu__item-pic" src="./img/budgers_slider/icons/beef.svg" alt="menu-item" >
+                                        <div class="hide-menu__item-ingredient">Говядина</div>
+                                        <div class="hide-menu__item-value">300 г</div>
+                                        <div class="hide-menu__item-cross">
+                                        </div>
+                                    </li>
+                                    <li class="hide-menu__item">
+                                            <img class="hide-menu__item-pic" src="./img/budgers_slider/icons/buns.svg" alt="menu-item" >
+                                            <div class="hide-menu__item-ingredient">Булочки</div>
+                                            <div class="hide-menu__item-value">100 г</div>        
+                                    </li>
+                                    <li class="hide-menu__item">
+                                            <img class="hide-menu__item-pic" src="./img/budgers_slider/icons/salad.svg" alt="menu-item" >
+                                            <div class="hide-menu__item-ingredient">Зелень</div>
+                                            <div class="hide-menu__item-value">70 г</div>
+                                    </li>
+                                    <li class="hide-menu__item">
+                                            <img class="hide-menu__item-pic" src="./img/budgers_slider/icons/sauce.svg" alt="menu-item" >
+                                            <div class="hide-menu__item-ingredient">Соус</div>
+                                            <div class="hide-menu__item-value">150 г</div>
+                                    </li>
+                                    <li class="hide-menu__item">
+                                            <img class="hide-menu__item-pic" src="./img/budgers_slider/icons/cucumber.svg" alt="menu-item" >
+                                            <div class="hide-menu__item-ingredient">Овощи</div>
+                                            <div class="hide-menu__item-value">200 г</div>
+                                    </li>
+                                    <li class="hide-menu__item">
+                                            <img class="hide-menu__item-pic" src="./img/budgers_slider/icons/cheese.svg" alt="menu-item" >
+                                            <div class="hide-menu__item-ingredient">Сыр</div>
+                                            <div class="hide-menu__item-value">80 г</div>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+                <div class="slider__kall">
+                        <img src="./img/budgers_slider/icons/kkal.svg" alt="call" class="slider__kall-img">
+                        <span class="slider__kall-val">1200</span>
+                        <span class="slider__kall-text">Калл</span>
+                </div>
+                <div class="slider__pic">
+                    <img src="./img/budgers_slider/burger_black.svg" alt="darkburger" class="slider__pic-img"> 
+                </div>
+                <div class="slider__cont">
+                        <h2 class="slider__title title title--white">dark beef burger</h2>
+                        <div class="slider__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежного
+                                сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                        <div class="slider__order">
+                            <div class="slider__price">500</div>
+                            <div class="slider__price slider__price--currency">рублей</div>
+                                <button class="button button--red">заказать</button>
+                        </div>
+                </div>
             </div>
             <div class="slider">
                 <div class="slider__hide-menu hide-menu">
@@ -173,26 +299,23 @@
                     <img src="./img/budgers_slider/burger_black.svg" alt="darkburger" class="slider__pic-img"> 
                 </div>
                 <div class="slider__cont">
-                    <ul class="slider__list">
-                        <li class="slider__item">
-                            <h2 class="slider__title title title--white">dark beef burger</h2>
-                            <div class="slider__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежного
-                                    сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
-                            <div class="slider__order">
-                                <div class="slider__price">500</div>
-                                <div class="slider__price slider__price--currency">рублей</div>
-                                    <button class="button button--red">заказать</button>
-                            </div>
-                        </li>
-                    </ul>
+                        <h2 class="slider__title title title--white">dark beef burger</h2>
+                        <div class="slider__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежного
+                                сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                        <div class="slider__order">
+                            <div class="slider__price">500</div>
+                            <div class="slider__price slider__price--currency">рублей</div>
+                                <button class="button button--red">заказать</button>
+                        </div>
                 </div>
+            </div> -->
             </div>
-            <div class="arrow">
-                    <a class="arrow__btn arrow__btn--right" href="#">
+            <div class="arrow" id="right">
+                    <span class="arrow__btn arrow__btn--right" href="#">
                         <svg class="arrow__scroll">
                             <use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
                         </svg> 
-                    </a>
+                    </span>
             </div>
         </div>
     </section>
@@ -222,7 +345,7 @@
                     </div>
                 </li>
                 <li class="team-accordeon__item ">
-                    <h3 class="team-accordeon__trigger team-accordeon__trigger--active">джейк финн</h3>
+                    <h3 class="team-accordeon__trigger">джейк финн</h3>
                     <div class="team-accordeon__content">
                         <img src="./img/team/richard.jpg" alt="photo" class="team-accordeon__content-photo">
                         <div class="team-accordeon__description">
@@ -250,24 +373,9 @@
         <div class="menu-accordeon">
             <ul class="menu-accordeon__list">
                 <li class="menu-accordeon__item">
-                    <a href="#" class="menu-accordeon__triger" style="background-image: url('./img/menu/triger-meat.jpg')">
-                        <div class="menu-accordeon__triger-text menu-accordeon__triger-text--active">для мясоедов</div>
-                    </a>
-                    <div class="menu-accordeon__cont menu-accordeon__cont--active">
-                        <div class="menu-accordeon__text">
-                                Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
-                                Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову,
-                                однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно
-                                выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
-                                конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник
-                                стал особенно чутко относиться к слову.
-                        </div>
-                    </div>
-                </li>
-                <li class="menu-accordeon__item">
-                    <a href="#" class="menu-accordeon__triger" style="background-image: url('./img/menu/triger-vegan.jpg')">
-                        <div class="menu-accordeon__triger-text">вегетарианское</div>
-                    </a>
+                    <span class="menu-accordeon__triger" style="background-image: url('./img/menu/triger-meat.jpg')">
+                        <span class="menu-accordeon__triger-text">для мясоедов</span>
+                    </span>
                     <div class="menu-accordeon__cont">
                         <div class="menu-accordeon__text">
                                 Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
@@ -280,9 +388,24 @@
                     </div>
                 </li>
                 <li class="menu-accordeon__item">
-                    <a href="#" class="menu-accordeon__triger" style="background-image: url('./img/menu/triger-diet.jpg')">
+                    <span class="menu-accordeon__triger" style="background-image: url('./img/menu/triger-vegan.jpg')">
+                        <div class="menu-accordeon__triger-text">вегетарианское</div>
+                    </span>
+                    <div class="menu-accordeon__cont">
+                        <div class="menu-accordeon__text">
+                                Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову,
+                                однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно
+                                выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
+                                конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник
+                                стал особенно чутко относиться к слову.
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-accordeon__item">
+                    <span class="menu-accordeon__triger" style="background-image: url('./img/menu/triger-diet.jpg')">
                         <div class="menu-accordeon__triger-text">диетическое</div>
-                    </a>
+                    </span>
                     <div class="menu-accordeon__cont">
                         <div class="menu-accordeon__text">
                                 Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
@@ -403,41 +526,41 @@
     <section class="section order" id="order">
         <div class="container order__container">
             <h2 class="title order__title title--yellow">закажите доставку</h2>
-            <form class="form" action="#">
+            <form class="form" id="orderForm" action="#">
             <div class="form__column">
                 <div class="form__row">
-                <lablel class="form__block">
-                    <div class="form__text">Имя</div>
-                    <input class="form__input" type="text" >
-                </lablel>
-                <lablel class="form__block">
-                    <div class="form__text">Телефон</div>
-                    <input class="form__input" type="text" >
-                </lablel>
+                    <lablel class="form__block">
+                        <div class="form__text">Имя</div>
+                        <input class="form__input" type="text" name="name" required>
+                    </lablel>
+                    <lablel class="form__block">
+                        <div class="form__text">Телефон</div>
+                        <input class="form__input" type="text" name="phone" required>
+                    </lablel>
+                        <input class="form__input" type="email" name="email" required value="sss@mail.ru" hidden>
+                </div>
+                <div class="form__row">
+                    <lablel class="form__block">
+                        <div class="form__text">Улица</div>
+                        <input type="text" class="form__input" name="street">
+                    </lablel>
                 </div>
                 <div class="form__row">
                 <lablel class="form__block">
-                <div class="form__text">Улица</div>
-                <input type="text" class="form__input">
-                </lablel>
-            </lablel>
-                </div>
-                <div class="form__row form__row">
-                <lablel class="form__block">
                 <div class="form__text">Дом</div>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="house">
                 </lablel>
                 <lablel class="form__block">
                 <div class="form__text">Корпус</div>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="building">
                 </lablel>
                 <lablel class="form__block">
                 <div class="form__text">Квартира</div>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="appartment">
                 </lablel>
                 <lablel class="form__block form__block--invisible">
                 <div class="form__text">Этаж</div>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="floor">
                 </lablel>
                 </div>
             </div>
@@ -445,30 +568,30 @@
                 <div class="form__row">
                 <lablel class="form__block">
                     <div class="form__text">Коментарий</div>
-                    <textarea class="form__area"> </textarea>
+                    <textarea class="form__area" name="comment" required> </textarea>
                 </lablel>
                 </div>
                 <div class="form__row payment">
                         <label class="payment__col" for="cash">
-                            <input class="payment__radio" type="radio" name="showphoto" value="cash" id="cash">
+                            <input class="payment__radio" type="radio" name="paytype" value="cash" id="cash">
                             <div class="payment__radio-fake"></div>
                             <span class="payment__desc">Потребуется сдача</span>
                         </label>
                         <label class="payment__col" for="card"> 
-                            <input class="payment__radio" type="radio" name="showphoto" value="card" id="card">
+                            <input class="payment__radio" type="radio" name="paytype" value="card" id="card">
                             <div class="payment__radio-fake"></div>
                             <span class="payment__desc">Оплата по карте</span>
                         </label>
                 </div>
                 <div class="form__row form__row--margin">
                     <label class="recallrequest">
-                        <input class="recallrequest__checkbox" type="checkbox" name="recall" value="no"> 
+                        <input class="recallrequest__checkbox" type="checkbox" name="recall"> 
                         <div class="recallrequest__checkbox-fake"></div>
                         <span>Не перезванивать</span>
                     </label>
                 </div>
                 <div class="form__row">
-                    <button class="button button--red" type="submit">заказать</button>
+                    <button class="button button--red" id="order-button">заказать</button>
                     <button class="resetform" type="reset" >Очистить</button>
                 </div>
             </div>
@@ -481,7 +604,7 @@
 </div>
 <div class="fullscreen-menu">
         <div class="fullscreen-menu__logo">
-            <svg class="logo__icon">
+            <svg class="fullscreen-menu__icon">
                 <use xlink:href="./img/icons/sprite.svg#logo"></use>
             </svg> 
         </div>
@@ -490,22 +613,22 @@
                 <a class="fullscreen-menu__link" href="#we">о нас</a>
             </li>
             <li class="fullscreen-menu__item">
-                <a class="fullscreen-menu__link" href="#">бургеры</a>
+                <a class="fullscreen-menu__link" href="#burgers">бургеры</a>
             </li>
             <li class="fullscreen-menu__item">
                 <a class="fullscreen-menu__link" href="#team">команда</a>
             </li>
             <li class="fullscreen-menu__item">
-                <a class="fullscreen-menu__link" href="#">меню</a>
+                <a class="fullscreen-menu__link" href="#menu">меню</a>
             </li>
             <li class="fullscreen-menu__item">
-                <a class="fullscreen-menu__link" href="#reviews">отзывы</a>
+                <a class="fullscreen-menu__link" href="#feedback">отзывы</a>
             </li>
             <!-- <li class="fullscreen-menu__item">
                 <a class="fullscreen-menu__link" href="#">как мы работаем</a>
             </li> -->
             <li class="fullscreen-menu__item">
-                <a class="fullscreen-menu__link" href="#">контакты</a>
+                <a class="fullscreen-menu__link" href="#adress">контакты</a>
             </li>
         </ul>
         <a href="#" class="fullscreen-menu__close"></a>
@@ -513,13 +636,13 @@
 <footer class="footer">
     <div class="container">
     <div class="footer-wrapper">
-        <div class="col col__left">
-            <address class="adress">
+        <div class="col col--left">
+            <address class="adress" id="adress">
                 <div class="adress__street">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
                 <a class="adress__tel" href="tel:+7(812)377-13-77" >+7(812)377-13-77</a>
             </address>
         </div>
-        <div class="col col__right">
+        <div class="col col--right">
             <div class="socials">
                 <ul class="socials__list">
                     <li class="socials__item"><a href="#" class="socials__item-link vk">
@@ -551,79 +674,15 @@
 <div class="sidemenu">
     <ul class="sidemenu__list">
         <li class="sidemenu__item sidemenu__item--active"><a href="#" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item"><a href="#we" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item"><a href="#burgers" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item"><a href="#team" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item"><a href="#menu" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item"><a href="#feedback" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item"><a href="#workflow" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item"><a href="#order" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item"><a href="#adress" class="sidemenu__link"></a></li>
     </ul>
 </div>
-
-<script> 
-//  открытие/закрытие полноэкранного меню "по клику на гамбургер меню в адаптивах"
-const hamburger = document.querySelector (".hamburger-menu");
-const fullScreenMenu = document.querySelector ('.fullscreen-menu');
-const closeMenu = document.querySelector (".fullscreen-menu__close");
-
-hamburger.addEventListener ('click', function (e){
-    fullScreenMenu.style.display = "flex";
-    document.body.classList.add('blocked-scroll');
-});
-
-closeMenu.addEventListener ('click', function (e){
-    e.preventDefault ();
-    fullScreenMenu.style.display = "none";
-    document.body.classList.remove('blocked-scroll');
-});
-//  открытие/закрытие меню "состав на слайдере"
-const closeHideMenu = document.querySelector (".hide-menu__item-cross");
-const HideMenu = document.querySelector (".hide-menu__wrapper");
-const ShowMenu = document.querySelector (".hide-menu__btn");
-
-closeHideMenu.addEventListener ('click', function (e){
-    HideMenu.style.visibility = "hidden";
-});
-ShowMenu.addEventListener ('mouseover', function (e){
-    HideMenu.removeAttribute("style");
-});
-//  карусель секции team
-// var accordeon = document.querySelector('.team-accordeon');
-let openTeamMate = document.querySelector (".team-accordeon__item");
-let TeamMate = openTeamMate.firstElementChild;
-
-    console.log (openTeamMate);
-    console.log (TeamMate);
-    openTeamMate.addEventListener ('click', function (e) {
-    if (TeamMate.classList.contains ('team-accordeon__trigger--active'))
-    { TeamMate.classList.remove ('team-accordeon__trigger--active');
-    } else 
-    {TeamMate.classList.add ("team-accordeon__trigger--active");
-}
-});
-
-// этот не очень работает!!!!!!
-// var accordeon = document.querySelector('.team-accordeon');
-
-// var i;
-
-// accordeon.addEventListener('click', function(e) {
-//   console.log("e.target");
-//   console.log(e.target);
-//   if (e.target.classList.contains('team-accordeon__trigger') ) {
-//     var trigger = e.target;
-//     var content = trigger.nextElementSibling;
-    
-//     if (content.style.height) {
-//       content.style.height = null;
-//     } else {
-//       content.style.height = content.scrollHeight + 'px';      
-//     }
-//   }
-
-// });
-</script>
 </body>
 </html>
