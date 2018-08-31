@@ -10,15 +10,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
     <link rel="manifest" href="./img/favicon/site.webmanifest">
     <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <script defer src="./js/main.js"></script>
-    <script defer src="./js/order.js"></script>
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>BestBurger</title>
 </head>
 <body>
 <div class="wrapper">
-    <section class="section firstpage" id="firstpage">
+<div class="maincontent">
+    <section class="section firstpage active" id="firstpage">
         <div class="container firstpage__container">
             <header class="header">
         <div class="logo">
@@ -29,29 +28,29 @@
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a class="nav__link" href="#we">о нас</a>
+                    <a class="nav__link" href="#" data-scroll-to="1">о нас</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#burgers">бургеры</a>
+                    <a class="nav__link" href="#"data-scroll-to="2">бургеры</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#team">команда</a>
+                    <a class="nav__link" href="#"data-scroll-to="3">команда</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#menu">меню</a>
+                    <a class="nav__link" href="#"data-scroll-to="4">меню</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#feedback">отзывы</a>
+                    <a class="nav__link" href="#"data-scroll-to="5">отзывы</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#workflow">как мы работаем</a>
+                    <a class="nav__link" href="#"data-scroll-to="6">как мы работаем</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#adress">контакты</a>
+                    <a class="nav__link" href="#"data-scroll-to="8">контакты</a>
                 </li>
             </ul>
         </nav>
-            <button class="button button--red" >заказать</button>
+            <button class="button button--red" data-scroll-to="7">заказать</button>
         <div class="hamburger-menu">
             <div class="hamburger-menu__item"></div>
             <div class="hamburger-menu__item"></div>
@@ -69,7 +68,7 @@
             </div>
         </div>
         <div class="arrow">
-            <span class="arrow__btn">
+            <span class="arrow__btn" data-scroll-to="2">
                 <svg class="arrow__scroll">
                     <use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
                 </svg> 
@@ -77,7 +76,6 @@
         </div>
     </div>
     </section>
-    
     <section class="section we" id="we">
         <div class="container we__container">
             <h2 class="title title--black">Мы лучшие</h2>
@@ -112,7 +110,6 @@
             </ul>
         </div>
     </section>
-
     <section class="section burgers" id="burgers">
         <div class="container burgers__container">
             <div class="arrow" id="left">
@@ -181,7 +178,7 @@
                         <div class="slider__order">
                             <div class="slider__price">500</div>
                             <div class="slider__price slider__price--currency">рублей</div>
-                                <button class="button button--red">заказать</button>
+                                <button class="button button--red"data-scroll-to="7">заказать</button>
                         </div>
                 </div>
             </div>
@@ -319,7 +316,6 @@
             </div>
         </div>
     </section>
-
     <section class="section team" id="team">
         <div class="team-accordeon">
             <h2 class="title team__title title--yellow">команда</h2>
@@ -367,7 +363,6 @@
             </ul>
         </div>
     </section>
-    
     <section class="section menu" id="menu">
         <h2 class="title menu__title"> меню</h2>
         <div class="menu-accordeon">
@@ -420,7 +415,6 @@
             </ul>
         </div>
     </section>
-    
     <section class="section feedback" id="feedback">
             <ul class="feedback__list">
                 <li class="feedback__item" style="background-image: url(./img/feedback/photo1.jpg);">
@@ -429,7 +423,7 @@
                             Константин Спилберг
                         </div>
                         <div class="feedback__text">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Voluptates saepe est doloremque autem Lorem Voluptates saepe est doloremque autem Lorem</p>
+                            <p>LМысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                         </div>
                         <button class="button button__black">подробнее</button>
                     </div>
@@ -437,7 +431,7 @@
                 <li class="feedback__item" style="background-image: url(./img/feedback/photo2.jpg);">
                     <div class="feedback__content">
                         <div class="feedback__user">
-                            Константин Спилберг
+                            Маргарита Самсонова
                         </div>
                         <div class="feedback__text">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -520,9 +514,36 @@
                 </li>
             </ul>
     </section>
-    
-    <section class="section workflow" id="workflow"></section>
-    
+    <section class="section workflow" id="workflow">
+        <div class="container workflow__container">
+            <h2 class="title title--black">Как мы работаем</h2>
+            <div class="player-wrapper">
+                <div id="ytplayer"></div>
+                <svg class="player__play player__center-play">
+                        <use xlink:href="./img/icons/sprite.svg#play"></use>
+                </svg>
+                <div class="player__controls">
+                    <svg class="player__play">
+                        <use xlink:href="./img/icons/sprite.svg#play"></use>
+                    </svg>
+                    <div class="player__video-scale">
+                        <div class="player__line player__line--video">
+                            <div class="player__video-dot"></div>
+                        </div>
+                    </div>
+                    <svg class="player__volume">
+                        <use xlink:href="./img/icons/sprite.svg#volume"></use>
+                    </svg>
+                    <div class="player__audio-scale">
+                        <div class="player__line player__line--audio">
+                            <div class="player__audio-dot"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section order" id="order">
         <div class="container order__container">
             <h2 class="title order__title title--yellow">закажите доставку</h2>
@@ -598,9 +619,50 @@
             </form>
         </div>
     </section>
-
     <section class="section map" id="map">
+        <div id="map" class="map">
+            <script defer src="./js/map.js"></script>
+        </div>
+        <footer class="footer">
+                <div class="container">
+                <div class="footer-wrapper">
+                    <div class="col col--left">
+                        <address class="adress" id="adress">
+                            <div class="adress__street">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+                            <a class="adress__tel" href="tel:+7(812)377-13-77" >+7(812)377-13-77</a>
+                        </address>
+                    </div>
+                    <div class="col col--right">
+                        <div class="socials">
+                            <ul class="socials__list">
+                                <li class="socials__item"><a href="#" class="socials__item-link vk">
+                                    <svg class="socials__icon">
+                                        <use xlink:href="./img/icons/sprite.svg#vkont"></use>
+                                    </svg>    
+                                </a></li>
+                                <li class="socials__item"><a href="#" class="socials__item-link fb">
+                                    <svg class="socials__icon">
+                                        <use xlink:href="./img/icons/sprite.svg#fb"></use>
+                                    </svg>    
+                                </a></li>
+                                <li class="socials__item"><a href="#" class="socials__item-link inst">
+                                    <svg class="socials__icon">
+                                        <use xlink:href="./img/icons/sprite.svg#inst"></use>
+                                    </svg>     
+                                </a></li>
+                                <li class="socials__item"><a href="#" class="socials__item-link tw">
+                                    <svg class="socials__icon">
+                                        <use xlink:href="./img/icons/sprite.svg#twit"></use>
+                                    </svg>   
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </footer>
     </section>
+</div>
 </div>
 <div class="fullscreen-menu">
         <div class="fullscreen-menu__logo">
@@ -610,79 +672,53 @@
         </div>
         <ul class="fullscreen-menu__list">
             <li class="fullscreen-menu__item">
-                <a class="fullscreen-menu__link" href="#we">о нас</a>
+                <a class="fullscreen-menu__link" href="#" data-scroll-to="1" >о нас</a>
             </li>
             <li class="fullscreen-menu__item">
-                <a class="fullscreen-menu__link" href="#burgers">бургеры</a>
+                <a class="fullscreen-menu__link" href="#" data-scroll-to="2" >бургеры</a>
             </li>
             <li class="fullscreen-menu__item">
-                <a class="fullscreen-menu__link" href="#team">команда</a>
+                <a class="fullscreen-menu__link" href="#" data-scroll-to="3" >команда</a>
             </li>
             <li class="fullscreen-menu__item">
-                <a class="fullscreen-menu__link" href="#menu">меню</a>
+                <a class="fullscreen-menu__link" href="#" data-scroll-to="4" >меню</a>
             </li>
             <li class="fullscreen-menu__item">
-                <a class="fullscreen-menu__link" href="#feedback">отзывы</a>
+                <a class="fullscreen-menu__link" href="#" data-scroll-to="5" >отзывы</a>
             </li>
             <!-- <li class="fullscreen-menu__item">
                 <a class="fullscreen-menu__link" href="#">как мы работаем</a>
             </li> -->
             <li class="fullscreen-menu__item">
-                <a class="fullscreen-menu__link" href="#adress">контакты</a>
+                <a class="fullscreen-menu__link" href="#" data-scroll-to="8" >контакты</a>
             </li>
         </ul>
         <a href="#" class="fullscreen-menu__close"></a>
     </div>
-<footer class="footer">
-    <div class="container">
-    <div class="footer-wrapper">
-        <div class="col col--left">
-            <address class="adress" id="adress">
-                <div class="adress__street">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
-                <a class="adress__tel" href="tel:+7(812)377-13-77" >+7(812)377-13-77</a>
-            </address>
-        </div>
-        <div class="col col--right">
-            <div class="socials">
-                <ul class="socials__list">
-                    <li class="socials__item"><a href="#" class="socials__item-link vk">
-                        <svg class="socials__icon">
-                            <use xlink:href="./img/icons/sprite.svg#vkont"></use>
-                        </svg>    
-                    </a></li>
-                    <li class="socials__item"><a href="#" class="socials__item-link fb">
-                        <svg class="socials__icon">
-                            <use xlink:href="./img/icons/sprite.svg#fb"></use>
-                        </svg>    
-                    </a></li>
-                    <li class="socials__item"><a href="#" class="socials__item-link inst">
-                        <svg class="socials__icon">
-                            <use xlink:href="./img/icons/sprite.svg#inst"></use>
-                        </svg>     
-                    </a></li>
-                    <li class="socials__item"><a href="#" class="socials__item-link tw">
-                        <svg class="socials__icon">
-                            <use xlink:href="./img/icons/sprite.svg#twit"></use>
-                        </svg>   
-                    </a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    </div>
-</footer>
+
 <div class="sidemenu">
     <ul class="sidemenu__list">
-        <li class="sidemenu__item sidemenu__item--active"><a href="#" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#we" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#burgers" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#team" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#menu" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#feedback" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#workflow" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#order" class="sidemenu__link"></a></li>
-        <li class="sidemenu__item"><a href="#adress" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item" data-scroll-to="0"><a href="#" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item" data-scroll-to="1"><a href="#" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item" data-scroll-to="2"><a href="#" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item" data-scroll-to="3"><a href="#" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item" data-scroll-to="4"><a href="#" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item" data-scroll-to="5"><a href="#" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item" data-scroll-to="6"><a href="#" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item" data-scroll-to="7"><a href="#" class="sidemenu__link"></a></li>
+        <li class="sidemenu__item" data-scroll-to="8"><a href="#" class="sidemenu__link"></a></li>
     </ul>
 </div>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.2/mobile-detect.min.js"></script>
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+<script defer src = "https://www.youtube.com/iframe_api"></script>
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" ></script>
+<script defer src="./js/main.js"></script>
+<script defer src="./js/order.js"></script>
+<script defer src="./js/player.js"></script>
+<script defer src="./js/feedbackmodal.js"></script>
+<script defer src="./js/onescrooll.js"></script>
+
 </body>
 </html>

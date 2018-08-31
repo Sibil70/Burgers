@@ -31,13 +31,17 @@ body{
     margin: 0 auto;
     position: relative;
     max-width: rem(940px);
-    height: 100vh;
+    height: 100%;
 }
 .wrapper{
     position: relative;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     overflow: hidden;
+}
+.maincontent{
+    height: 100%;
+    transition: transform 1s;
 }
 ul{
     margin: 0;
@@ -47,11 +51,8 @@ ul, li {
     list-style-type: none;
 }
 .section{
-    // width: 100%;
-    // min-width: rem(1100px);
-    height: 100vh;
+    height: 100%;
     min-height: rem(650px);
-    // overflow: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;

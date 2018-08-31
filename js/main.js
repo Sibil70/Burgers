@@ -60,13 +60,10 @@ openMenu.forEach(function(item) {
     activeMenu = (activeMenu === this) ? 0 : this;
   })
 });
-
-
 // слайдер секции burgers
 const left = document.querySelector("#left");
 const right = document.querySelector("#right");
 const items = document.querySelector("#slideritems");
-console.log (items);
 const minRight = 0;
 const maxRight = 1760;
 const step = 880;
