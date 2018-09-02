@@ -618,7 +618,7 @@ address {
     border: 0.1875rem solid #f9b43b; }
   @media screen and (max-width: 480px) {
     .form__area {
-      height: 3.125rem; } }
+      height: 3.0625rem; } }
 
 .payment__col {
   display: -webkit-box;
