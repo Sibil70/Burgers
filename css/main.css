@@ -616,6 +616,9 @@ address {
   .form__area:focus {
     outline: none;
     border: 0.1875rem solid #f9b43b; }
+  @media screen and (max-width: 480px) {
+    .form__area {
+      height: 3.125rem; } }
 
 .payment__col {
   display: -webkit-box;

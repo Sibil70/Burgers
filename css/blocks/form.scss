@@ -77,6 +77,9 @@
         outline: none;
         border: rem(3px) solid $yellow;
     }
+    @include phones {
+        height: rem(50px);
+    }
 }
 .payment__col{
     display: flex;
