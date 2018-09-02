@@ -22,3 +22,11 @@
         margin-bottom: rem(32px);
     }
 }
+.slider__title {
+    @include tablets{
+        text-align: center;
+    }
+    @include phones{
+        font-size: rem(50px);
+    }
+}

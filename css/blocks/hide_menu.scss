@@ -1,8 +1,9 @@
 .slider__hide-menu {
     position: absolute;
-    top: -20%;
+    top: -00%;
     @include tablets {
-        top: -10%;
+        // top: -10%;
+        display: none;
     }
 }
 .hide-menu__btn{

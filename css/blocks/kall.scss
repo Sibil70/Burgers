@@ -1,11 +1,12 @@
 .slider__kall {
     position: absolute;
-    top: 100%;
+    top: 80%;
     color: #fff;
     opacity: 0.5;
     @include tablets {
-        top: -8%;
-        left: 80%;
+        display: none;
+        // top: -8%;
+        // left: 80%;
     }
 }
 .slider__kall-val {

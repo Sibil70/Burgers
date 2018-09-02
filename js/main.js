@@ -60,28 +60,21 @@ openMenu.forEach(function(item) {
     activeMenu = (activeMenu === this) ? 0 : this;
   })
 });
+
 // слайдер секции burgers
-const left = document.querySelector("#left");
-const right = document.querySelector("#right");
-const items = document.querySelector("#slideritems");
-const minRight = 0;
-const maxRight = 1760;
-const step = 880;
-let currentRight = 0;
 
-items.style.right = currentRight;
+$(document).ready(function(){
+    var slider = $('.slider').bxSlider({
+         speed: 1
+     });
 
-right.addEventListener("click", function() {
-  if (currentRight < maxRight) {
-    currentRight += step;
-    items.style.right = currentRight + "px";
-  }
-  console.log ('click right');
-});
+     $('#right').on('click', e =>{
+        e.preventDefault();
+       slider.goToNextSlide();
+    });
+     $('#left').on('click', e =>{
+        e.preventDefault();
+       slider.goToPrevSlide();
+    });
 
-left.addEventListener("click", function() {
-  if (currentRight > minRight) {
-    currentRight -= step;
-    items.style.right = currentRight + "px";
-  }
 });

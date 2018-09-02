@@ -70,7 +70,7 @@ orderButton.addEventListener ('click', function(event){
         containerElement.classList.add("overlaycontainer");
 
         const contentElement = document.createElement("div");
-        contentElement.classList.add("content");
+        contentElement.classList.add("orderoverlay__content");
 
         const textElement = document.createElement("div");
         textElement.classList.add("overlaytext");

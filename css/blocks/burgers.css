@@ -1,0 +1,8 @@
+.burgers {
+  background: #f9b43b;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(50%, #eb8c38), to(#f9b43b));
+  background: linear-gradient(0deg, #f9b43b 0%, #eb8c38 50%, #f9b43b 100%);
+  padding: 0 3%;
+  width: 100%; }
+
+/*# sourceMappingURL=burgers.css.map */

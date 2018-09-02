@@ -5,6 +5,7 @@
     flex: 1;
     justify-content: center;
     @include tablets {
+        width: 90%;
         flex-direction: column;
         justify-content: center;
         margin-bottom: rem(3px);
