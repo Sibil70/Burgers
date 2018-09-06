@@ -13,7 +13,7 @@ Error: Undefined mixin 'phones'.
 12:         flex-direction: column;
 13:     }
 14: }
-15: .footer-wrapper {
+15: .footer__wrapper {
 
 Backtrace:
 D:\LOFT\sites\burger\css\blocks\footer.scss:10:in `phones'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 10 of D:\LOFT\sites\burger\css\blocks\footer.scss, in `phones'\A         from line 10 of D:\LOFT\sites\burger\css\blocks\footer.scss\A \A 5:     width: 100%;\A 6:     height: rem(60px);\A 7:     color: #fff;\A 8:     overflow: hidden;\A 9:     z-index: 2;\A 10:     @include phones {\A 11:         height: rem(110px);\A 12:         flex-direction: column;\A 13:     }\A 14: }\A 15: .footer-wrapper {"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 10 of D:\LOFT\sites\burger\css\blocks\footer.scss, in `phones'\A         from line 10 of D:\LOFT\sites\burger\css\blocks\footer.scss\A \A 5:     width: 100%;\A 6:     height: rem(60px);\A 7:     color: #fff;\A 8:     overflow: hidden;\A 9:     z-index: 2;\A 10:     @include phones {\A 11:         height: rem(110px);\A 12:         flex-direction: column;\A 13:     }\A 14: }\A 15: .footer__wrapper {"; }

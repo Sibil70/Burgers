@@ -12,7 +12,7 @@
         flex-direction: column;
     }
 }
-.footer-wrapper {
+.footer__wrapper {
     display: flex;
     justify-content: space-between;
     padding-bottom: rem(3px);
@@ -21,7 +21,7 @@
         align-items: center;
     }
 }
-.col {
+.footer__col {
     width: 50%;
     padding-top: rem(10px);
     @include phones {

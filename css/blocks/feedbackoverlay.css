@@ -1,0 +1,73 @@
+.feedbackoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(62, 64, 65, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10000; }
+
+.overlaycontainer {
+  position: relative; }
+
+.content {
+  width: rem(350px);
+  padding: rem(15px);
+  background: #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.content__user {
+  font-family: 'gagalin';
+  font-size: rem(13px); }
+
+.content__text {
+  font-family: 'ubuntu';
+  line-height: 1.45rem;
+  font-size: rem(13px);
+  margin: 0 auto; }
+
+.content__close {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: rem(20px);
+  cursor: pointer; }
+
+.content__close-img {
+  cursor: pointer;
+  background: #CD6D45;
+  height: 20px;
+  width: 3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: relative;
+  left: 40%; }
+  .content__close-img:after {
+    content: "";
+    height: 3px;
+    width: 20px;
+    background: #CD6D45;
+    position: absolute;
+    left: -9px;
+    top: 8px; }
+
+/*# sourceMappingURL=feedbackoverlay.css.map */

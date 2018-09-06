@@ -58,7 +58,7 @@
 }
 .form__input{
     border: initial;
-    padding: rem(14px) rem(15px);
+    padding: rem(5px) rem(5px);
     width: 100%;
     border-radius: rem(5px);
     border: rem(3px) solid transparent;
@@ -72,7 +72,7 @@
     border: rem(3px) solid transparent;
     border-radius: rem(5px);
     width: 100%;
-    height: rem(145px);
+    height: rem(96px);
     &:focus{
         outline: none;
         border: rem(3px) solid $yellow;

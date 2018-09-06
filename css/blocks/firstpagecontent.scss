@@ -15,7 +15,7 @@
     position: relative;
     margin-left: rem(52px);
     @include phones {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
 }
@@ -43,6 +43,11 @@
         text-align: center;
     }
 }
+.firstpagecontent__title{
+    @include phones {
+        font-size: rem(45px);
+    }
+}
 .firstpagecontent__subtitle{
     display: inline-block;
     font-family: 'lifehack';
@@ -51,6 +56,11 @@
     line-height: 1.01em;
     margin: rem(0px);
     @include tablets {
+        width: 99%;
+        text-align: center;
+    }
+    @include phones {
+        font-size: rem(35px);
         width: 99%;
         text-align: center;
     }
