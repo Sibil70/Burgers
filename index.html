@@ -490,7 +490,7 @@
                                     невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими,
                                     котлетка такой сочной, а сыр таким расплавленным.</p>
                             </div>
-                            <button class="button button__black">подробнее</button>
+                            <button class="button button__black js-feedback-modal">подробнее</button>
                         </div>
                     </li>
                     <li class="feedback__item" style="background-image: url(./img/feedback/photo2.jpg);">
@@ -502,7 +502,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                     Voluptates saepe est doloremque autem</p>
                             </div>
-                            <button class="button button__black">подробнее</button>
+                            <button class="button button__black js-feedback-modal">подробнее</button>
                         </div>
                     </li>
                     <li class="feedback__item" style="background-image: url(./img/feedback/photo3.jpg);">
@@ -514,7 +514,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                     Voluptates saepe est doloremque autem</p>
                             </div>
-                            <button class="button button__black">подробнее</button>
+                            <button class="button button__black js-feedback-modal">подробнее</button>
                         </div>
                     </li>
                     <li class="feedback__item" style="background-image: url(./img/feedback/photo4.jpg);">
@@ -526,7 +526,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                     Voluptates saepe est doloremque autem</p>
                             </div>
-                            <button class="button button__black">подробнее</button>
+                            <button class="button button__black js-feedback-modal">подробнее</button>
                         </div>
                     </li>
                     <li class="feedback__item" style="background-image: url(./img/feedback/photo5.jpg);">
@@ -538,7 +538,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                     Voluptates saepe est doloremque autem</p>
                             </div>
-                            <button class="button button__black">подробнее</button>
+                            <button class="button button__black js-feedback-modal">подробнее</button>
                         </div>
                     </li>
                     <li class="feedback__item" style="background-image: url(./img/feedback/photo6.jpg);">
@@ -550,7 +550,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                     Voluptates saepe est doloremque autem</p>
                             </div>
-                            <button class="button button__black">подробнее</button>
+                            <button class="button button__black js-feedback-modal">подробнее</button>
                         </div>
                     </li>
                     <li class="feedback__item" style="background-image: url(./img/feedback/photo7.jpg);">
@@ -562,7 +562,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                     Voluptates saepe est dolorem</p>
                             </div>
-                            <button class="button button__black">подробнее</button>
+                            <button class="button button__black js-feedback-modal">подробнее</button>
                         </div>
                     </li>
                     <li class="feedback__item" style="background-image: url(./img/feedback/photo8.jpg);">
@@ -574,7 +574,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                     Voluptates saepe est doloremque autem</p>
                             </div>
-                            <button class="button button__black">подробнее</button>
+                            <button class="button button__black js-feedback-modal">подробнее</button>
                         </div>
                     </li>
                 </ul>
@@ -783,19 +783,20 @@
     <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script defer src="./js/jquery.bxslider.min.js"></script>
     <script type = "template" id = "modal-tmp">
-
-            <div class="overlaycontainer">
-                <div class="orderoverlay__content">
-                    <div class="overlaytext"></div>
-                    <button class="button button--red button--marginbottom">закрыть</button>
+        <div class="overlay__container">
+            <div class="overlay__content">
+                <div class="overlay__close js-close">
+                    <div class="overlay__close-img"></div>
                 </div>
+                <div class="overlay__title"></div>
+                <div class="overlay__text"></div>
+                <button class="button button--red js-close">закрыть</button>
             </div>
-
+        </div>
     </script>
     <script defer src="./js/main.js"></script>
-    <script defer src="./js/order.js"></script>
+    <script defer src="./js/order_feedback_popup.js"></script>
     <script defer src="./js/player.js"></script>
-    <script defer src="./js/feedbackoverlay.js"></script>
     <script defer src="./js/onescrooll.js"></script>
 </body>
 
