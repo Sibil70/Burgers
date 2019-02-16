@@ -10,42 +10,41 @@ $tablets: 768px;
 $phones: 480px;
 
 //normalize
-@import "./layout/normalize.css";
+@import "./layout/normalize.scss";
 
 //for adaptive
-@import './_misc/media.scss';
+@import './_misc/_media.scss';
 
 //layout
-@import "./layout/layout.scss";
-@import "./layout/fonts.scss";
+@import "./layout/_layout.scss";
+@import "./layout/_fonts.scss";
 //blocks
-@import "./blocks/firstpage.scss";
-@import "./blocks/buttons.scss";
-@import "./blocks/titles.scss";
-@import "./blocks/firstpagecontent.scss";
-@import "./blocks/arrow.scss";
-@import "./blocks/header.scss";
-@import "./blocks/we__list.scss";
-@import "./blocks/form.scss";
-@import "./blocks/we.scss";
-@import "./blocks/feedback.scss";
-@import "./blocks/workflow.scss";
-@import "./blocks/sidemenu.scss";
-@import "./blocks/team.scss";
-@import "./blocks/team__acord.scss";
-@import "./blocks/menu.scss";
-@import "./blocks/menu-accordeon.scss";
-@import "./blocks/map.scss";
-@import "./blocks/footer.scss";
-@import "./blocks/address.scss";
-@import "./blocks/socials.scss";
-@import "./blocks/hamburger-menu.scss";
-@import "./blocks/burgers.scss";
-@import "./blocks/burgers__slider.scss";
-@import "./blocks/hide_menu.scss";
-@import "./blocks/kall.scss";
-@import "./blocks/fullscreen-menu.scss";
-@import "./blocks/orderoverlay.scss";
-@import "./blocks/feedbackoverlay.scss";
-@import "./blocks/player.scss";
-
+@import "./blocks/_firstpage.scss";
+@import "./blocks/_buttons.scss";
+@import "./blocks/_titles.scss";
+@import "./blocks/_firstpagecontent.scss";
+@import "./blocks/_arrow.scss";
+@import "./blocks/_header.scss";
+@import "./blocks/_we__list.scss";
+@import "./blocks/_form.scss";
+@import "./blocks/_we.scss";
+@import "./blocks/_feedback.scss";
+@import "./blocks/_workflow.scss";
+@import "./blocks/_sidemenu.scss";
+@import "./blocks/_team.scss";
+@import "./blocks/_team__acord.scss";
+@import "./blocks/_menu.scss";
+@import "./blocks/_menu-accordeon.scss";
+@import "./blocks/_map.scss";
+@import "./blocks/_footer.scss";
+@import "./blocks/_address.scss";
+@import "./blocks/_socials.scss";
+@import "./blocks/_hamburger-menu.scss";
+@import "./blocks/_burgers.scss";
+@import "./blocks/_burgers__slider.scss";
+@import "./blocks/_hide_menu.scss";
+@import "./blocks/_kall.scss";
+@import "./blocks/_fullscreen-menu.scss";
+@import "./blocks/_orderoverlay.scss";
+@import "./blocks/_feedbackoverlay.scss";
+@import "./blocks/_player.scss";

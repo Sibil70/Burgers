@@ -1,4 +1,31 @@
 
+//  открытие/закрытие полноэкранного меню "по клику на гамбургер меню в адаптивах"
+const hamburger = document.querySelector (".hamburger-menu");
+const fullScreenMenu = document.querySelector ('.fullscreen-menu');
+const closeMenu = document.querySelector (".fullscreen-menu__close");
+const menuLink = document.querySelectorAll (".fullscreen-menu__link");
+
+hamburger.addEventListener ('click', e =>{
+    fullScreenMenu.style.display = "flex";
+    document.body.classList.add('blocked-scroll');
+    });
+closeMenu.addEventListener ('click', e =>{
+        e.preventDefault ();
+        fullScreenMenu.style.display = "none";
+        document.body.classList.remove('blocked-scroll');
+        });
+menuLink.forEach(function(item) {
+    item.addEventListener('click', e => {
+        closeMenu.click();
+    });
+
+fullScreenMenu.addEventListener('click', e =>{
+    if(e.target === fullScreenMenu){
+        closeMenu.click();
+    }
+})
+});
+
 // аккордеон секции team
 var openTeamMate = document.querySelectorAll (".team-accordeon__trigger");
 var activeTeamMate;
@@ -9,43 +36,6 @@ openTeamMate.forEach(function(item) {
         if (activeTeamMate) {activeTeamMate.classList.remove('team-accordeon__trigger--active')}
         activeTeamMate = (activeTeamMate === this) ? 0 : this;
   })
-});
-
-//  открытие/закрытие полноэкранного меню "по клику на гамбургер меню в адаптивах"
-const hamburger = document.querySelector (".hamburger-menu");
-const fullScreenMenu = document.querySelector ('.fullscreen-menu');
-const closeMenu = document.querySelector (".fullscreen-menu__close");
-const closeMenu2 = document.querySelectorAll (".fullscreen-menu__link");
-
-closeMenu2.forEach(function(item) {
-    item.addEventListener('click', function(e) {
-        fullScreenMenu.style.display = "none";
-        document.body.classList.remove('blocked-scroll');
-    });
-hamburger.addEventListener ('click', function (e){
-    fullScreenMenu.style.display = "flex";
-    document.body.classList.add('blocked-scroll');
-    });
-
-closeMenu.addEventListener ('click', function (e){
-    e.preventDefault ();
-    fullScreenMenu.style.display = "none";
-    document.body.classList.remove('blocked-scroll');
-    });
-
-});
-
-
-//  открытие/закрытие меню "состав на слайдере"
-const closeHideMenu = document.querySelector (".hide-menu__item-cross");
-const HideMenu = document.querySelector (".hide-menu__wrapper");
-const ShowMenu = document.querySelector (".hide-menu__btn");
-
-closeHideMenu.addEventListener ('click', function (e){
-    HideMenu.style.visibility = "hidden";
-});
-ShowMenu.addEventListener ('mouseover', function (e){
-    HideMenu.removeAttribute("style");
 });
 
 // аккордеон секции menu
